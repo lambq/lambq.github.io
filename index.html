@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Lambq Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="大家好，我是李松峡。人称“lambq”、小名（阿呆）欢迎来到我的个人技术博客。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lambq Blog">
+<meta property="og:url" content="http://lambq.com/index.html">
+<meta property="og:site_name" content="Lambq Blog">
+<meta property="og:description" content="大家好，我是李松峡。人称“lambq”、小名（阿呆）欢迎来到我的个人技术博客。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lambq Blog">
+<meta name="twitter:description" content="大家好，我是李松峡。人称“lambq”、小名（阿呆）欢迎来到我的个人技术博客。">
+  
+    <link rel="alternative" href="/atom.xml" title="Lambq Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+    
+    
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: true,
+          isPost: false,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Lambq</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">lambq</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">博客首页</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=415113157@qq.com" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/lambq" title="github">github</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="https://www.linkedin.com/in/%E6%9D%BE%E5%B3%A1-%E6%9D%8E-077312108" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/centos/" style="font-size: 20px;">centos</a> <a href="/tags/cnpm/" style="font-size: 10px;">cnpm</a> <a href="/tags/cron/" style="font-size: 10px;">cron</a> <a href="/tags/db/" style="font-size: 10px;">db</a> <a href="/tags/git/" style="font-size: 20px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/laravel/" style="font-size: 20px;">laravel</a> <a href="/tags/migration/" style="font-size: 10px;">migration</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/nvm/" style="font-size: 10px;">nvm</a> <a href="/tags/nvmw/" style="font-size: 10px;">nvmw</a> <a href="/tags/queue/" style="font-size: 10px;">queue</a> <a href="/tags/ssh-key/" style="font-size: 10px;">ssh key</a> <a href="/tags/supervisor/" style="font-size: 10px;">supervisor</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/版本控制器/" style="font-size: 10px;">版本控制器</a> <a href="/tags/进程管理控制/" style="font-size: 10px;">进程管理控制</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.github.com/lambq">github</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">计算机科学与人工智能爱好者！一个web和移动开发人员、攻城狮、绝对是一个技术的家伙。也是一个旅行者和探险家、想成为一个终身学习者、这个应该不是梦！</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Lambq</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Lambq</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">lambq</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">博客首页</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=415113157@qq.com" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/lambq" title="github">github</a>
+                    
+                        <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/%E6%9D%BE%E5%B3%A1-%E6%9D%8E-077312108" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/04/02/hello-world/" class="article-date">
+      <time datetime="2017-04-01T19:53:23.000Z" itemprop="datePublished">2017-04-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/02/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-2016-06-26-laravel-db-mig-action" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/26/2016-06-26-laravel-db-mig-action/" class="article-date">
+      <time datetime="2016-06-25T16:31:07.000Z" itemprop="datePublished">2016-06-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/26/2016-06-26-laravel-db-mig-action/">laravel数据库迁移</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="生成迁移文件-命令"><a href="#生成迁移文件-命令" class="headerlink" title="生成迁移文件 命令"></a>生成迁移文件 命令</h1><ul>
+<li>生成文件路径是：<code>database/imgrations</code></li>
+<li><p>每个迁移文件名都包含时间戳从而允许laravel判断其顺序<br>*<code>–table</code>和<code>–create</code>选项可以用于指定表名以及该迁移是否要创建一个新的数据表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php artisan make:migration users --create=users</div></pre></td></tr></table></figure>
+<p>*<code>–migration</code>选项会生成对应的数据表模型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php artisan make:migration users --migration</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="执行所有未执行的迁移"><a href="#执行所有未执行的迁移" class="headerlink" title="执行所有未执行的迁移"></a>执行所有未执行的迁移</h1>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php artisan migrate</div></pre></td></tr></table></figure>
+<h1 id="回滚上一次的迁移"><a href="#回滚上一次的迁移" class="headerlink" title="回滚上一次的迁移"></a>回滚上一次的迁移</h1>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php artisan migrate:rollback</div></pre></td></tr></table></figure>
+<h1 id="回滚所有迁移"><a href="#回滚所有迁移" class="headerlink" title="回滚所有迁移"></a>回滚所有迁移</h1>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php artisan migrate:reset</div></pre></td></tr></table></figure>
+<h1 id="数据填充"><a href="#数据填充" class="headerlink" title="数据填充"></a>数据填充</h1><p>  *生成文件路径是<code>databases/seeds</code><br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php artisan make:seeder UserTableSeeder</div></pre></td></tr></table></figure></p>
+<h1 id="执行数据填充代码"><a href="#执行数据填充代码" class="headerlink" title="执行数据填充代码"></a>执行数据填充代码</h1>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php artisan db:seed</div></pre></td></tr></table></figure>
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/db/">db</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/laravel/">laravel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/migration/">migration</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-2016-05-13-laravel-cron-queue" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/13/2016-05-13-laravel-cron-queue/" class="article-date">
+      <time datetime="2016-05-13T12:22:17.000Z" itemprop="datePublished">2016-05-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/13/2016-05-13-laravel-cron-queue/">laravel的任务调度(cron)和队列一起使用制作采集器</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="说明！注意事项！"><a href="#说明！注意事项！" class="headerlink" title="说明！注意事项！"></a>说明！注意事项！</h1><ul>
+<li>看下面的教程！还是看一遍laravel中文文档是很有必要的！因为我是看中文文档、写出来的程序</li>
+<li>本人使用的是阿里云(1核CPU|1GB内存|1M带宽|centos6.5-64位系统|系统盘20G|laravel5.2)的配置</li>
+<li>所有的队列(queue)和任务调度(console)里面的数据库DB操作！都需要使用 DB类库！不可以使用orm！区别是mysql长链接和短链接……</li>
+<li>任务调度(console)里面只做数据库的查询——处理抛给队列处理！因为这样你的系统进程会很干净！不会又出现挂断或者假死等等！注意一点 程序结束必须有 return</li>
+<li>队列(queue)里面也是每一个 function 都要书写 return</li>
+<li>不管是在任务调度里面、队列任务里面、队列任务里面再次调用队列任务！都使用全局队列任务推送函数:dispatch！如何使用看下面操练代码</li>
+<li>重要一点！要排除所以的bug</li>
+<li>看代码为主！文字为辅助<h1 id="队列-queue"><a href="#队列-queue" class="headerlink" title="队列(queue)"></a>队列(queue)</h1></li>
+<li>很多文档都在说队列、使用数据库、如果真正上线了使用数据库是不行的！一定修改成redis的！###一会说一下修改redis的流程</li>
+<li>做队列调试直接使用！数据库队列进行调试！<h2 id="数据库队列——开发与调试"><a href="#数据库队列——开发与调试" class="headerlink" title="数据库队列——开发与调试"></a>数据库队列——开发与调试</h2></li>
+<li><p>以下操作可以直接在现有项目上面执行！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">php artisan queue:table #为数据库队列生成数据库表</div><div class="line">php artisan migrate #为数据库队列创建数据库表</div><div class="line">php artisan make:job ArtCaiji #创一个队列工作任务！这个是处理文章内容的采集</div></pre></td></tr></table></figure>
+</li>
+<li><p>以下是队列工作任务文件里面的代码 注意看！我给大家注释</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"></div><div class="line"><span class="keyword">namespace</span> <span class="title">App</span>\<span class="title">Jobs</span>;</div><div class="line"></div><div class="line"><span class="keyword">use</span> <span class="title">App</span>\<span class="title">Jobs</span>\<span class="title">Job</span>;</div><div class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Queue</span>\<span class="title">SerializesModels</span>;</div><div class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Queue</span>\<span class="title">InteractsWithQueue</span>;</div><div class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Contracts</span>\<span class="title">Queue</span>\<span class="title">ShouldQueue</span>;</div><div class="line"><span class="comment">//以上都是自动生成的代码不需要管理</span></div><div class="line"><span class="keyword">use</span> <span class="title">DB</span>, <span class="title">phpQuery</span>, <span class="title">Log</span>; <span class="comment">//这里调用了3个类库!DB是数据库操作类库、phpquery是采集类库、log是日志类库</span></div><div class="line"><span class="comment">/*</span></div><div class="line">log类库主要是用来做调试 打印输出</div><div class="line">phpquery类库主要是用来做 网页上面的信息采集</div><div class="line">db类库主要是用来做 数据库的处理</div><div class="line">代码里面没有使用中间件！怕大家晕……</div><div class="line">类里面的 </div><div class="line">public function __construct($row)</div><div class="line">&#123;</div><div class="line">    //</div><div class="line">    $this-&gt;row = $row;</div><div class="line">&#125;</div><div class="line">不能省略这是队列工作任务类最重要的、传值方式！变量$row我传入的是一个对象值!然后把它赋给ArtCaiji类里面的私有对象$row;</div><div class="line">*/</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">ArtCaiji</span> <span class="keyword">extends</span> <span class="title">Job</span> <span class="keyword">implements</span> <span class="title">ShouldQueue</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">use</span> <span class="title">InteractsWithQueue</span>, <span class="title">SerializesModels</span>;</div><div class="line">    <span class="keyword">protected</span> $row;</div><div class="line">    <span class="comment">/**</span></div><div class="line">     * Create a new job instance.</div><div class="line">     *</div><div class="line">     * <span class="doctag">@return</span> void</div><div class="line">     */</div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span><span class="params">($row)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">//</span></div><div class="line">        <span class="keyword">$this</span>-&gt;row = $row;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 下面是我们要执行的代码</div><div class="line">     *</div><div class="line">     * <span class="doctag">@return</span> void</div><div class="line">     */</div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">handle</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">//</span></div><div class="line">        $metas = <span class="keyword">array</span>();</div><div class="line">        $res    = <span class="keyword">array</span>();</div><div class="line">        <span class="keyword">if</span>(<span class="keyword">$this</span>-&gt;row)&#123;</div><div class="line">            $html = <span class="keyword">$this</span>-&gt;get_url_content(<span class="keyword">$this</span>-&gt;row[<span class="string">'href'</span>]);</div><div class="line">            <span class="keyword">if</span>($html)&#123;</div><div class="line">                phpQuery::newDoclamb($html);</div><div class="line">                <span class="keyword">foreach</span>(pq(<span class="string">'meta'</span>) <span class="keyword">as</span> $meta)&#123;</div><div class="line">                    $key = pq($meta)-&gt;attr(<span class="string">'name'</span>);</div><div class="line">                    $value= pq($meta)-&gt;attr(<span class="string">'content'</span>);</div><div class="line">                    $metas[strtolower($key)] = $value;</div><div class="line">                &#125;</div><div class="line">                $title = trim(pq(<span class="string">'.head-wrap .title'</span>)-&gt;text());</div><div class="line">                $articles = DB::table(<span class="string">'articles'</span>)-&gt;where(<span class="string">'art_title'</span>, $title)-&gt;first();</div><div class="line">                <span class="keyword">if</span>($articles)&#123;</div><div class="line">                    <span class="comment">//Log::info('文章已经存在===='.$title);</span></div><div class="line">                    phpQuery::$documents = <span class="keyword">array</span>();</div><div class="line">                    <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">                &#125;<span class="keyword">else</span>&#123;</div><div class="line">                    $insertedId = DB::table(<span class="string">'articles'</span>)-&gt;insertGetId([</div><div class="line">                        <span class="string">'user_id'</span> =&gt; <span class="string">'10000'</span>,</div><div class="line">                        <span class="string">'cate_id'</span> =&gt; <span class="keyword">$this</span>-&gt;row[<span class="string">'cate_id'</span>],</div><div class="line">                        <span class="string">'art_title'</span> =&gt; $title,</div><div class="line">                        <span class="string">'art_tags'</span> =&gt; $metas[<span class="string">'keywords'</span>],</div><div class="line">                        <span class="string">'copy_from'</span> =&gt; <span class="string">'本站原创'</span>,</div><div class="line">                        <span class="string">'copy_url'</span> =&gt; <span class="string">'http://www.webshowu.com'</span>,</div><div class="line">                        <span class="string">'art_intro'</span> =&gt; $metas[<span class="string">'description'</span>],</div><div class="line">                        <span class="string">'art_content'</span> =&gt; <span class="keyword">$this</span>-&gt;ImgFindShift_5118(pq(<span class="string">'.content'</span>)-&gt;html()),</div><div class="line">                        <span class="string">'art_views'</span> =&gt; <span class="string">'10'</span>,</div><div class="line">                        <span class="string">'art_status'</span> =&gt; <span class="string">'3'</span>,</div><div class="line">                        <span class="string">'created_at'</span> =&gt; date(<span class="string">'Y-m-d H:i:s'</span>,time()),</div><div class="line">                        <span class="string">'updated_at'</span> =&gt; date(<span class="string">'Y-m-d H:i:s'</span>,time()),</div><div class="line">                    ]);</div><div class="line">                    <span class="keyword">if</span>($insertedId)&#123;</div><div class="line">                        $result = <span class="keyword">$this</span>-&gt;zhanzhang_push_baidu(<span class="string">"http://www.webshowu.com/artinfo-"</span>.$insertedId.<span class="string">".html"</span>);</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                phpQuery::$documents = <span class="keyword">array</span>();</div><div class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">            &#125;<span class="keyword">else</span>&#123;</div><div class="line">                Log::info(var_export(<span class="keyword">$this</span>-&gt;row,<span class="keyword">true</span>));</div><div class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            Log::info(<span class="string">'对象是空值'</span>);</div><div class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">    &#125;</div><div class="line">    <span class="comment">/*专业处理5118文章图片*/</span></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">ImgFindShift_5118</span><span class="params">($html)</span></span>&#123;</div><div class="line">        <span class="keyword">if</span>($html)&#123;</div><div class="line">            $array = <span class="keyword">array</span>();</div><div class="line">            $dochtml = phpQuery::newDoclamb($html);</div><div class="line">            <span class="keyword">foreach</span>(pq(<span class="string">'img'</span>) <span class="keyword">as</span> $img)&#123;</div><div class="line">                $val[<span class="string">'src1'</span>] = pq($img)-&gt;attr(<span class="string">'data-original'</span>);</div><div class="line">                $val[<span class="string">'src2'</span>] = pq($img)-&gt;attr(<span class="string">'src'</span>);</div><div class="line">                $array[] = $val;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">foreach</span>($array <span class="keyword">as</span> $key =&gt; $str)&#123;</div><div class="line">                pq(<span class="string">"img:eq($key)"</span>)-&gt;attr(<span class="string">'src'</span>,$str[<span class="string">'src1'</span>]);</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> $dochtml;</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">/** 获取指定URL内容 */</span></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">get_url_content</span><span class="params">($url, $proxy = true)</span> </span>&#123;</div><div class="line">        $data = <span class="string">''</span>;</div><div class="line">        $ch = curl_init();</div><div class="line">        curl_setopt($ch, CURLOPT_URL, $url);</div><div class="line">        curl_setopt($ch, CURLOPT_HEADER ,<span class="number">0</span>);</div><div class="line">        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT,<span class="number">60</span>);</div><div class="line">        curl_setopt($ch, CURLOPT_RETURNTRANSFER,<span class="number">1</span>); <span class="comment">// 设置不将爬取代码写到浏览器，而是转化为字符串</span></div><div class="line">        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, <span class="number">1</span>);</div><div class="line">        <span class="keyword">if</span>($proxy)&#123;</div><div class="line">            <span class="comment">//AppKey 信息，请替换</span></div><div class="line">            $appKey = <span class="string">'xxx'</span>;</div><div class="line">            <span class="comment">//AppSecret 信息，请替换</span></div><div class="line">            $secret = <span class="string">'xxxx'</span>;</div><div class="line">            <span class="comment">//示例请求参数</span></div><div class="line">            $paramMap = <span class="keyword">array</span>(</div><div class="line">                <span class="string">'app_key'</span>   =&gt; $appKey,</div><div class="line">                <span class="string">'timestamp'</span> =&gt; date(<span class="string">'Y-m-d H:i:s'</span>),</div><div class="line">                <span class="string">'enable-simulate'</span> =&gt; <span class="string">'false'</span>,</div><div class="line">            );</div><div class="line">            <span class="comment">//按照参数名排序</span></div><div class="line">            ksort($paramMap);</div><div class="line">            <span class="comment">//连接待加密的字符串</span></div><div class="line">            $codes = $secret;</div><div class="line">            <span class="comment">//请求的URL参数</span></div><div class="line">            $auth = <span class="string">'MYH-AUTH-MD5 '</span>;</div><div class="line">            <span class="keyword">foreach</span> ($paramMap <span class="keyword">as</span> $key =&gt; $val) &#123;</div><div class="line">                $codes .= $key . $val;</div><div class="line">                $auth  .= $key . <span class="string">'='</span> . $val . <span class="string">'&amp;'</span>;</div><div class="line">            &#125;</div><div class="line">            $codes .= $secret;</div><div class="line">            <span class="comment">//签名计算</span></div><div class="line">            $auth .= <span class="string">'sign='</span> . strtoupper(md5($codes));</div><div class="line">            curl_setopt($ch, CURLOPT_HTTPHEADER, <span class="keyword">array</span>(<span class="string">"Proxy-Authorization: &#123;$auth&#125;"</span>));</div><div class="line">            curl_setopt($ch, CURLOPT_PROXYAUTH, CURLAUTH_BASIC); <span class="comment">//代理认证模式</span></div><div class="line">            curl_setopt($ch, CURLOPT_PROXY, <span class="string">'xxxx'</span>); <span class="comment">//代理服务器地址</span></div><div class="line">            curl_setopt($ch, CURLOPT_PROXYPORT, <span class="string">'xxx'</span>); <span class="comment">//代理服务器端口</span></div><div class="line">            curl_setopt($ch, CURLOPT_PROXYTYPE, CURLPROXY_HTTP); <span class="comment">//使用http代理模式</span></div><div class="line">        &#125;</div><div class="line">        $data = curl_exec($ch);</div><div class="line">        <span class="keyword">if</span> ($data  === <span class="keyword">FALSE</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">        curl_close($ch);</div><div class="line">        <span class="keyword">if</span> (!$data) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            $encode = mb_detect_encoding($data, <span class="keyword">array</span>(<span class="string">'ascii'</span>, <span class="string">'gb2312'</span>, <span class="string">'utf-8'</span>, <span class="string">'gbk'</span>));</div><div class="line">            <span class="keyword">if</span>($encode != <span class="string">'utf-8'</span>)&#123;</div><div class="line">                <span class="keyword">if</span>($encode == <span class="string">'EUC-CN'</span> || $encode == <span class="string">'CP936'</span>)&#123;</div><div class="line">                    $data = @mb_convert_encoding($data, <span class="string">'utf-8'</span>, <span class="string">'gb2312'</span>);</div><div class="line">                &#125;<span class="keyword">else</span>&#123;</div><div class="line">                    $data = @mb_convert_encoding($data, <span class="string">'utf-8'</span>, $encode);</div><div class="line">                &#125;   </div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> $data;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">/** 百度站长工具推送代码 **/</span></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">zhanzhang_push_baidu</span><span class="params">($url)</span></span>&#123;</div><div class="line"></div><div class="line">        $urls = <span class="keyword">array</span>($url);</div><div class="line">        $api = <span class="string">'http://data.zz.baidu.com/urls?site=www.webshowu.com&amp;token=6ujhg0alnRLbwZr7'</span>;</div><div class="line">        $ch = curl_init();</div><div class="line">        $options =  <span class="keyword">array</span>(</div><div class="line">            CURLOPT_URL =&gt; $api,</div><div class="line">            CURLOPT_POST =&gt; <span class="keyword">true</span>,</div><div class="line">            CURLOPT_RETURNTRANSFER =&gt; <span class="keyword">true</span>,</div><div class="line">            CURLOPT_POSTFIELDS =&gt; implode(<span class="string">"\n"</span>, $urls),</div><div class="line">            CURLOPT_HTTPHEADER =&gt; <span class="keyword">array</span>(<span class="string">'Content-Type: text/plain'</span>),</div><div class="line">        );</div><div class="line">        curl_setopt_array($ch, $options);</div><div class="line">        $result = curl_exec($ch);</div><div class="line">        <span class="keyword">return</span> $result;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="上线之后修改成redis"><a href="#上线之后修改成redis" class="headerlink" title="上线之后修改成redis"></a>上线之后修改成redis</h2><ul>
+<li>必须安装好redis</li>
+<li><p>把代码    “predis/predis”: “~1.0”    添加到composer.conf文件的require里面：代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;name&quot;: &quot;laravel/laravel&quot;,</div><div class="line">    &quot;description&quot;: &quot;The Laravel Framework.&quot;,</div><div class="line">    &quot;keywords&quot;: [&quot;framework&quot;, &quot;laravel&quot;],</div><div class="line">    &quot;license&quot;: &quot;MIT&quot;,</div><div class="line">    &quot;type&quot;: &quot;project&quot;,</div><div class="line">    &quot;require&quot;: &#123;</div><div class="line">        &quot;php&quot;: &quot;&gt;=5.5.9&quot;,</div><div class="line">        &quot;laravel/framework&quot;: &quot;5.2.*&quot;,</div><div class="line">        &quot;jenssegers/agent&quot;: &quot;^2.3&quot;,</div><div class="line">        &quot;stevenyangecho/laravel-u-editor&quot;: &quot;~1.3&quot;,</div><div class="line">        &quot;overtrue/laravel-lang&quot;: &quot;1.0.*&quot;,</div><div class="line">        &quot;predis/predis&quot;: &quot;~1.0&quot; </div><div class="line">    &#125;,</div><div class="line">    &quot;require-dev&quot;: &#123;</div><div class="line">        &quot;fzaninotto/faker&quot;: &quot;~1.4&quot;,</div><div class="line">        &quot;mockery/mockery&quot;: &quot;0.9.*&quot;,</div><div class="line">        &quot;phpunit/phpunit&quot;: &quot;~4.0&quot;,</div><div class="line">        &quot;symfony/css-selector&quot;: &quot;2.8.*|3.0.*&quot;,</div><div class="line">        &quot;symfony/dom-crawler&quot;: &quot;2.8.*|3.0.*&quot;</div><div class="line">    &#125;,</div><div class="line">    &quot;autoload&quot;: &#123;</div><div class="line">        &quot;classmap&quot;: [</div><div class="line">            &quot;database&quot;,</div><div class="line">      &quot;app/libs/phpQuery&quot;</div><div class="line">        ],</div><div class="line">        &quot;psr-4&quot;: &#123;</div><div class="line">            &quot;App\\&quot;: &quot;app/&quot;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    &quot;autoload-dev&quot;: &#123;</div><div class="line">        &quot;classmap&quot;: [</div><div class="line">            &quot;tests/TestCase.php&quot;</div><div class="line">        ]</div><div class="line">    &#125;,</div><div class="line">    &quot;scripts&quot;: &#123;</div><div class="line">        &quot;post-root-package-install&quot;: [</div><div class="line">            &quot;php -r \&quot;copy(&apos;.env.example&apos;, &apos;.env&apos;);\&quot;&quot;</div><div class="line">        ],</div><div class="line">        &quot;post-create-project-cmd&quot;: [</div><div class="line">            &quot;php artisan key:generate&quot;</div><div class="line">        ],</div><div class="line">        &quot;post-install-cmd&quot;: [</div><div class="line">            &quot;php artisan clear-compiled&quot;,</div><div class="line">            &quot;php artisan optimize&quot;</div><div class="line">        ],</div><div class="line">        &quot;post-update-cmd&quot;: [</div><div class="line">            &quot;php artisan clear-compiled&quot;,</div><div class="line">            &quot;php artisan optimize&quot;</div><div class="line">        ]</div><div class="line">    &#125;,</div><div class="line">    &quot;config&quot;: &#123;</div><div class="line">        &quot;preferred-install&quot;: &quot;dist&quot;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>执行 composer update 代码！</p>
+</li>
+<li>修改 redis 的配置信息 文件位置是：config/database.php 里面的 redis数组</li>
+<li>修改 队列 的配置信息 文件位置是: config/queue.php 里面的 default 值修改成redis </li>
+<li>如果你看到的都是这样书写代码 env(‘QUEUE_DRIVER’, ‘sync’) 请到项目跟目录下面修改 .env 文件</li>
+<li>啊……！就这样简单！是的<h2 id="执行队列"><a href="#执行队列" class="headerlink" title="执行队列"></a>执行队列</h2></li>
+<li>建议调试的时候直接使用 php artisan queue:listen</li>
+<li>线上直接使用supervisor安装配置使用都在这个网址里面<a href="https://phphub.org/topics/2126" target="_blank" rel="external">https://phphub.org/topics/2126</a><h1 id="任务调度-cron"><a href="#任务调度-cron" class="headerlink" title="任务调度(cron)"></a>任务调度(cron)</h1></li>
+<li>重要的是要保证进程不会假死！挂掉！不能有一丝丝php错误信息！每一个 function 都需要return !正常执行完毕程序、进程会自动推出！我强烈建议每一个调度任务都建立一个console<h2 id="建立调度任务并编写代码"><a href="#建立调度任务并编写代码" class="headerlink" title="建立调度任务并编写代码"></a>建立调度任务并编写代码</h2></li>
+<li><p>下面的程序可以直接执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php artisan make:console CaiJiQi #创建调度任务命令文件 位置是 app/Console/Commands 文件里面</div></pre></td></tr></table></figure>
+</li>
+<li><p>下面是CaiJiQi.php文件里面的代码</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"></div><div class="line"><span class="keyword">namespace</span> <span class="title">App</span>\<span class="title">Console</span>\<span class="title">Commands</span>;</div><div class="line"></div><div class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Console</span>\<span class="title">Command</span>;</div><div class="line"><span class="comment">//以上是自动生成的</span></div><div class="line"><span class="keyword">use</span> <span class="title">App</span>\<span class="title">Jobs</span>\<span class="title">RegList</span>; <span class="comment">//这里我调用了队列RegList 采集规则 处理程序</span></div><div class="line"><span class="keyword">use</span> <span class="title">DB</span>, <span class="title">Log</span>; <span class="comment">//这里调用了2个类库！DB是数据库类库、log是日志类库</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">caijiqi</span> <span class="keyword">extends</span> <span class="title">Command</span></span></div><div class="line">&#123;</div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 设置用 php的artisan工具调用名字 </div><div class="line">     * 调用代码直接在命令这样写 php artisan caiji 就执行现在这个文件</div><div class="line">     * <span class="doctag">@var</span> string</div><div class="line">     */</div><div class="line">    <span class="keyword">protected</span> $signature = <span class="string">'caiji'</span>;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 设置写 这个命令工具的描述 </div><div class="line">     * 只能写英文的 中文会乱码 因为编码的问题</div><div class="line">     * <span class="doctag">@var</span> string</div><div class="line">     */</div><div class="line">    <span class="keyword">protected</span> $description = <span class="string">'zhu yao shi yong lai zuo ding shi cai ji'</span>;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 这一行可能有些朋友基础不好的！是看不明白!</div><div class="line">     * 加载这个类的时候、直接执行父类的析构函数方法</div><div class="line">     * <span class="doctag">@return</span> void</div><div class="line">     */</div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="keyword">parent</span>::__construct();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 这才是我们的关键！可以开始写要执行的代码了！</div><div class="line">     * 因为我使用不到传值！所以先不写了！你们需要那就去看laravel中文文档</div><div class="line">     * <span class="doctag">@return</span> mixed</div><div class="line">     */</div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">handle</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">//</span></div><div class="line">        $reg_list = DB::table(<span class="string">'Reg_List'</span>)-&gt;where(<span class="string">'reg_status'</span>,<span class="string">'3'</span>)-&gt;get(); <span class="comment">//读取采集规则表里面所以规则</span></div><div class="line">        <span class="keyword">foreach</span>($reg_list <span class="keyword">as</span> $str)&#123;</div><div class="line">            dispatch(<span class="keyword">new</span> RegList($str)); <span class="comment">//然后遍历把它 推送给 RegList 采集规则队列</span></div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">true</span>; <span class="comment">//不能减少return啊！</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>由于处理采集规则是一个长耗时的工作！所以我又创建了一个队列文件 RegList</p>
+</li>
+<li>下面是RegList.php文件里面的代码<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"></div><div class="line"><span class="keyword">namespace</span> <span class="title">App</span>\<span class="title">Jobs</span>;</div><div class="line"></div><div class="line"><span class="keyword">use</span> <span class="title">App</span>\<span class="title">Jobs</span>\<span class="title">Job</span>;</div><div class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Queue</span>\<span class="title">SerializesModels</span>;</div><div class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Queue</span>\<span class="title">InteractsWithQueue</span>;</div><div class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Contracts</span>\<span class="title">Queue</span>\<span class="title">ShouldQueue</span>;</div><div class="line"><span class="comment">//以上代码是自动生成的</span></div><div class="line"><span class="keyword">use</span> <span class="title">App</span>\<span class="title">Jobs</span>\<span class="title">ArtCaiji</span>;<span class="comment">///这里我调用了队列ArtCaiji 采集文章 处理程序</span></div><div class="line"><span class="keyword">use</span> <span class="title">DB</span>, <span class="title">phpQuery</span>, <span class="title">Log</span>;</div><div class="line"><span class="comment">/*</span></div><div class="line">log类库主要是用来做调试 打印输出</div><div class="line">phpquery类库主要是用来做 网页上面的信息采集</div><div class="line">db类库主要是用来做 数据库的处理</div><div class="line">代码里面没有使用中间件！怕大家晕……</div><div class="line">类里面的 </div><div class="line">public function __construct($row)</div><div class="line">&#123;</div><div class="line">    //</div><div class="line">    $this-&gt;row = $row;</div><div class="line">&#125;</div><div class="line">不能省略这是队列工作任务类最重要的、传值方式！变量$row我传入的是一个对象值!然后把它赋给RegList类里面的私有对象$row;</div><div class="line">*/</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">RegList</span> <span class="keyword">extends</span> <span class="title">Job</span> <span class="keyword">implements</span> <span class="title">ShouldQueue</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">use</span> <span class="title">InteractsWithQueue</span>, <span class="title">SerializesModels</span>;</div><div class="line">    <span class="keyword">protected</span> $row;</div><div class="line">    <span class="comment">/**</span></div><div class="line">     * Create a new job instance.</div><div class="line">     *</div><div class="line">     * <span class="doctag">@return</span> void</div><div class="line">     */</div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">__construct</span><span class="params">($row)</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">//</span></div><div class="line">        <span class="keyword">$this</span>-&gt;row = $row;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * Execute the job.</div><div class="line">     *</div><div class="line">     * <span class="doctag">@return</span> void</div><div class="line">     */</div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">handle</span><span class="params">()</span></span></div><div class="line">    &#123;</div><div class="line">        <span class="comment">//</span></div><div class="line">        Log::info(<span class="string">'调用了一次==='</span>.<span class="keyword">$this</span>-&gt;row-&gt;reg_url);</div><div class="line">        $html = <span class="keyword">$this</span>-&gt;get_url_content(<span class="keyword">$this</span>-&gt;row-&gt;reg_url);</div><div class="line">        <span class="keyword">if</span>($html)&#123;</div><div class="line">            $data = <span class="keyword">array</span>();</div><div class="line">            phpQuery::newDoclamb($html);</div><div class="line">            <span class="keyword">foreach</span>(pq(<span class="keyword">$this</span>-&gt;row-&gt;reg_list) <span class="keyword">as</span> $res)&#123;</div><div class="line">                $title = trim(pq($res)-&gt;text());</div><div class="line">                <span class="keyword">if</span>(<span class="keyword">$this</span>-&gt;row-&gt;reg_ishost)&#123;</div><div class="line">                    $href = <span class="keyword">$this</span>-&gt;row-&gt;reg_host.pq($res)-&gt;attr(<span class="string">'href'</span>);</div><div class="line">                &#125;<span class="keyword">else</span>&#123;</div><div class="line">                    $href = pq($res)-&gt;attr(<span class="string">'href'</span>);</div><div class="line">                &#125;</div><div class="line">                $data[] = $title.<span class="string">'======'</span>.$href;</div><div class="line">            &#125;</div><div class="line">            phpQuery::$documents = <span class="keyword">array</span>();</div><div class="line">            <span class="keyword">if</span>(<span class="keyword">$this</span>-&gt;row-&gt;reg_content == json_encode($data))&#123;</div><div class="line">                <span class="comment">//Log::info('采集结果一样=='.$this-&gt;row-&gt;reg_url);</span></div><div class="line">            &#125;<span class="keyword">else</span>&#123;</div><div class="line">                $result = <span class="keyword">$this</span>-&gt;ArtCaiji_array_diff($data,json_decode(<span class="keyword">$this</span>-&gt;row-&gt;reg_content,<span class="keyword">true</span>));</div><div class="line">                <span class="keyword">if</span>($result)&#123;</div><div class="line">                    DB::table(<span class="string">'Reg_List'</span>)-&gt;where(<span class="string">'reg_id'</span>,<span class="keyword">$this</span>-&gt;row-&gt;reg_id)-&gt;update(<span class="keyword">array</span>(<span class="string">'updated_at'</span>=&gt; date(<span class="string">'Y-m-d H:i:s'</span>,time()),<span class="string">'reg_content'</span>=&gt;json_encode($data)));</div><div class="line">                    <span class="keyword">$this</span>-&gt;ArtCaiji_queue($result,<span class="keyword">$this</span>-&gt;row-&gt;cate_id);</div><div class="line">                    <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            Log::info(<span class="string">'这个网址已经失去效果=='</span>.<span class="keyword">$this</span>-&gt;row-&gt;reg_url);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">/*文章一维数组进行对比返回不一样的值*/</span></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">ArtCaiji_array_diff</span><span class="params">($array1,$array2)</span></span>&#123;</div><div class="line">        <span class="keyword">if</span>($array2!=<span class="string">''</span> &amp;&amp; $array1!=<span class="string">''</span>)&#123;</div><div class="line">            $result = array_diff($array1,$array2);</div><div class="line">            <span class="keyword">return</span> $result;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>($array2 == <span class="string">''</span> &amp;&amp; $array1 !=<span class="string">''</span>)&#123;&#125;</div><div class="line">        &#123;</div><div class="line">            $result = $array1;</div><div class="line">            <span class="keyword">return</span> $result;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">/*文章队列提交*/</span></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">ArtCaiji_queue</span><span class="params">($array,$cate_id)</span></span>&#123;</div><div class="line">        <span class="keyword">if</span>($array)&#123;</div><div class="line">            <span class="keyword">foreach</span> ($array <span class="keyword">as</span> $value) &#123;</div><div class="line">                $str = explode(<span class="string">'======'</span>,$value);</div><div class="line">                $result[<span class="string">'title'</span>] = $str[<span class="string">'0'</span>];</div><div class="line">                $result[<span class="string">'href'</span>] = $str[<span class="string">'1'</span>];</div><div class="line">                $result[<span class="string">'cate_id'</span>] = $cate_id;</div><div class="line">                <span class="keyword">if</span>($result[<span class="string">'title'</span>] != <span class="string">''</span> &amp;&amp; $result[<span class="string">'href'</span>] != <span class="string">''</span> &amp;&amp; $result[<span class="string">'cate_id'</span>])&#123;</div><div class="line">                    dispatch(<span class="keyword">new</span> ArtCaiji($result));</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="comment">/** 获取指定URL内容 */</span></div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">get_url_content</span><span class="params">($url, $proxy = true)</span> </span>&#123;</div><div class="line">        $data = <span class="string">''</span>;</div><div class="line">        $ch = curl_init();</div><div class="line">        curl_setopt($ch, CURLOPT_URL, $url);</div><div class="line">        curl_setopt($ch, CURLOPT_HEADER ,<span class="number">0</span>);</div><div class="line">        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT,<span class="number">60</span>);</div><div class="line">        curl_setopt($ch, CURLOPT_RETURNTRANSFER,<span class="number">1</span>); <span class="comment">// 设置不将爬取代码写到浏览器，而是转化为字符串</span></div><div class="line">        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, <span class="number">1</span>);</div><div class="line">        <span class="keyword">if</span>($proxy)&#123;</div><div class="line">            <span class="comment">//AppKey 信息，请替换</span></div><div class="line">            $appKey = <span class="string">'xx'</span>;</div><div class="line">            <span class="comment">//AppSecret 信息，请替换</span></div><div class="line">            $secret = <span class="string">'xxxx'</span>;</div><div class="line">            <span class="comment">//示例请求参数</span></div><div class="line">            $paramMap = <span class="keyword">array</span>(</div><div class="line">                <span class="string">'app_key'</span>   =&gt; $appKey,</div><div class="line">                <span class="string">'timestamp'</span> =&gt; date(<span class="string">'Y-m-d H:i:s'</span>),</div><div class="line">                <span class="string">'enable-simulate'</span> =&gt; <span class="string">'false'</span>,</div><div class="line">            );</div><div class="line">            <span class="comment">//按照参数名排序</span></div><div class="line">            ksort($paramMap);</div><div class="line">            <span class="comment">//连接待加密的字符串</span></div><div class="line">            $codes = $secret;</div><div class="line">            <span class="comment">//请求的URL参数</span></div><div class="line">            $auth = <span class="string">'MYH-AUTH-MD5 '</span>;</div><div class="line">            <span class="keyword">foreach</span> ($paramMap <span class="keyword">as</span> $key =&gt; $val) &#123;</div><div class="line">                $codes .= $key . $val;</div><div class="line">                $auth  .= $key . <span class="string">'='</span> . $val . <span class="string">'&amp;'</span>;</div><div class="line">            &#125;</div><div class="line">            $codes .= $secret;</div><div class="line">            <span class="comment">//签名计算</span></div><div class="line">            $auth .= <span class="string">'sign='</span> . strtoupper(md5($codes));</div><div class="line">            curl_setopt($ch, CURLOPT_HTTPHEADER, <span class="keyword">array</span>(<span class="string">"Proxy-Authorization: &#123;$auth&#125;"</span>));</div><div class="line">            curl_setopt($ch, CURLOPT_PROXYAUTH, CURLAUTH_BASIC); <span class="comment">//代理认证模式</span></div><div class="line">            curl_setopt($ch, CURLOPT_PROXY, <span class="string">'xxx'</span>); <span class="comment">//代理服务器地址</span></div><div class="line">            curl_setopt($ch, CURLOPT_PROXYPORT, <span class="string">'xxx'</span>); <span class="comment">//代理服务器端口</span></div><div class="line">            curl_setopt($ch, CURLOPT_PROXYTYPE, CURLPROXY_HTTP); <span class="comment">//使用http代理模式</span></div><div class="line">        &#125;</div><div class="line">        $data = curl_exec($ch);</div><div class="line">        <span class="keyword">if</span> ($data  === <span class="keyword">FALSE</span>) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">        curl_close($ch);</div><div class="line">        <span class="keyword">if</span> (!$data) &#123;</div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            $encode = mb_detect_encoding($data, <span class="keyword">array</span>(<span class="string">'ascii'</span>, <span class="string">'gb2312'</span>, <span class="string">'utf-8'</span>, <span class="string">'gbk'</span>));</div><div class="line">            <span class="keyword">if</span>($encode != <span class="string">'utf-8'</span>)&#123;</div><div class="line">                <span class="keyword">if</span>($encode == <span class="string">'EUC-CN'</span> || $encode == <span class="string">'CP936'</span>)&#123;</div><div class="line">                    $data = @mb_convert_encoding($data, <span class="string">'utf-8'</span>, <span class="string">'gb2312'</span>);</div><div class="line">                &#125;<span class="keyword">else</span>&#123;</div><div class="line">                    $data = @mb_convert_encoding($data, <span class="string">'utf-8'</span>, $encode);</div><div class="line">                &#125;   </div><div class="line">            &#125;</div><div class="line">            <span class="keyword">return</span> $data;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cron/">cron</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/laravel/">laravel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/queue/">queue</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-2016-05-12-git-install-and-config" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/12/2016-05-12-git-install-and-config/" class="article-date">
+      <time datetime="2016-05-12T06:05:32.000Z" itemprop="datePublished">2016-05-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/12/2016-05-12-git-install-and-config/">git的安装配置</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="第一次使用github"><a href="#第一次使用github" class="headerlink" title="第一次使用github"></a>第一次使用github</h1><h2 id="github注册账号、使用邮箱注册账号"><a href="#github注册账号、使用邮箱注册账号" class="headerlink" title="github注册账号、使用邮箱注册账号"></a>github注册账号、使用邮箱注册账号</h2><blockquote>
+<p>先不要创建版本库</p>
+</blockquote>
+<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><blockquote>
+<p>linux系统一般都已经自带安装好了！这里就不说了<br>windows系统从<a href="https://git-for-windows.github.io" target="_blank" rel="external">https://git-for-windows.github.io</a> 下载、然后按默认选项安装即可<br>这里给大家说一下为什么node很多操作都需要在git bash下面执行命令呢？git命令操作和Linux命令差不多，很多命令可以直接使用,比如cd,vi 可以说是简易的cygwin了</p>
+</blockquote>
+<h2 id="安装完成后，还需要最后一步设置，在命令行输入"><a href="#安装完成后，还需要最后一步设置，在命令行输入" class="headerlink" title="安装完成后，还需要最后一步设置，在命令行输入"></a>安装完成后，还需要最后一步设置，在命令行输入</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;Your Name&quot;</div><div class="line">git config --global user.email &quot;email@example.com&quot;</div></pre></td></tr></table></figure>
+<h2 id="创建ssh-key"><a href="#创建ssh-key" class="headerlink" title="创建ssh key"></a>创建ssh key</h2><blockquote>
+<p>在用户主目录下，看看有没有.ssh目录，</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd ~/.ssh #切换目录至ssh配置目录</div><div class="line">ls #查看一下有没有ssh配置文件信息</div></pre></td></tr></table></figure>
+<blockquote>
+<p>再看看目录下有没有id_rsa和id_rsa.pub这两个文件、如果已经有了、可直接跳到下一步<br>如果没有、打开Shell（Windows下打开Git Bash），创建SSH Key：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>会让您输入.ssh/id_rsa目录文件的路径、默认即可<br>然后输入新密码、确认即可</p>
+</blockquote>
+<h2 id="配置github的ssh-key"><a href="#配置github的ssh-key" class="headerlink" title="配置github的ssh key"></a>配置github的ssh key</h2><blockquote>
+<p>登陆github、打开<a href="https://github.com/settings/profile" target="_blank" rel="external">https://github.com/settings/profile</a> 里面的 ssh and gpg keys<br>然后点击右上角的 new ssh key 、填上任意title、在key文本框里粘贴文件id_rsa.pub里面的内容</p>
+</blockquote>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ssh-key/">ssh key</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-2016-05-12-cnpm-install-and-config" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/12/2016-05-12-cnpm-install-and-config/" class="article-date">
+      <time datetime="2016-05-12T06:05:21.000Z" itemprop="datePublished">2016-05-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/12/2016-05-12-cnpm-install-and-config/">cnpm安装配置给npm加速</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <blockquote>
+<p>同理nvm,npm默认是从国外的源获取和下载包信息、不慢才奇怪那<br>可以通过简单的    —registry    参数、使用国内的镜像 <a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">npm --registry=https://registry.npm.taobao.org install koa</div><div class="line"></div><div class="line">npm http GET https://registry.npm.taobao.org/koa</div><div class="line">npm http 200 https://registry.npm.taobao.org/koa</div><div class="line">...</div><div class="line">npm http 200 https://registry.npm.taobao.org/negotiator</div><div class="line">npm http 200 https://registry.npm.taobao.org/keygrip</div><div class="line">koa[@0](/user/0).5.2 node_modules/koa</div><div class="line">├── koa-compose[@2](/user/2).2.0</div><div class="line">├── statuses[@1](/user/1).0.2</div><div class="line">├── finished[@1](/user/1).1.1</div><div class="line">├── escape-html[@1](/user/1).0.1</div><div class="line">├── only[@0](/user/0).0.2</div><div class="line">├── debug[@0](/user/0).8.0</div><div class="line">├── fresh[@0](/user/0).2.2</div><div class="line">├── type-is[@1](/user/1).0.1</div><div class="line">├── delegates[@0](/user/0).0.3</div><div class="line">├── mime[@1](/user/1).2.11</div><div class="line">├── co[@3](/user/3).0.5</div><div class="line">├── accepts[@1](/user/1).0.1 (negotiator[@0](/user/0).4.2)</div><div class="line">└── cookies[@0](/user/0).4.0 (keygrip[@1](/user/1).0.0)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>但是毕竟镜像跟官方的 npm 源还是会有一个同步时间差异、目前 cnpm 的默认同步时间间隔是 15 分钟. 如果你是模块发布者、或者你想马上同步一个模块、那么推荐你安装 cnpm cli:</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm --registry=https://registry.npm.taobao.org install cnpm -g</div></pre></td></tr></table></figure>
+<blockquote>
+<p>通过 cnpm 命令行, 你可以快速同步任意模块</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm sync koa connect mocha</div></pre></td></tr></table></figure>
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cnpm/">cnpm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/npm/">npm</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-2016-05-12-nodejs-install-and-config" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/12/2016-05-12-nodejs-install-and-config/" class="article-date">
+      <time datetime="2016-05-12T06:05:05.000Z" itemprop="datePublished">2016-05-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/12/2016-05-12-nodejs-install-and-config/">快速搭建node.js开发环境</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="osx、linux环境搭建"><a href="#osx、linux环境搭建" class="headerlink" title="osx、linux环境搭建"></a>osx、linux环境搭建</h1><blockquote>
+<p>如果你是windows环境开发、请跳过这里，直接查看下一章</p>
+<h2 id="git-clone-nvm"><a href="#git-clone-nvm" class="headerlink" title="git clone nvm"></a>git clone nvm</h2><p>直接从 github clone nvm到本地、这里建议大家都使用 ~/git 目录存放git项目</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">pwd  #这是查看当前目录、如果不在用户目录下面、请切换。我使用的root所以切换到root下面。</div><div class="line">cd /root #切换目录至root下面</div><div class="line">mkdir git #建立一个git目录</div><div class="line">cd ~/git #切换到更才建立的git目录下面</div><div class="line">git clone https://github.com/creationix/nvm.git #从github把nvm代码down到本地</div></pre></td></tr></table></figure>
+<blockquote>
+<p>配置终端启动时自动执行 source ~/git/nvm/nvm.sh<br>在 ~/.bashrc 或者 ~/.bash_profile 或者 ~/.profile 或者 ~/.zshrc 文件添加以下命令</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source ~/git/nvm/nvm.sh</div></pre></td></tr></table></figure>
+<blockquote>
+<p>重新打开您的终端输入    nvm</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">  nvm</div><div class="line">  Node Version Manager</div><div class="line"></div><div class="line">Usage:</div><div class="line">    nvm help                    Show this message</div><div class="line">    nvm --version               Print out the latest released version of nvm</div><div class="line">    nvm install [-s] &lt;version&gt;  Download and install a &lt;version&gt;, [-s] from source</div><div class="line">    nvm uninstall &lt;version&gt;     Uninstall a version</div><div class="line">    nvm use &lt;version&gt;           Modify PATH to use &lt;version&gt;</div><div class="line">    nvm run &lt;version&gt; [&lt;args&gt;]  Run &lt;version&gt; with &lt;args&gt; as arguments</div><div class="line">    nvm current                 Display currently activated version</div><div class="line">    nvm ls                      List installed versions</div><div class="line">    nvm ls &lt;version&gt;            List versions matching a given description</div><div class="line">    nvm ls-remote               List remote versions available for install</div><div class="line">    nvm deactivate              Undo effects of NVM on current shell</div><div class="line">    nvm alias [&lt;pattern&gt;]       Show all aliases beginning with &lt;pattern&gt;</div><div class="line">    nvm alias &lt;name&gt; &lt;version&gt;  Set an alias named &lt;name&gt; pointing to &lt;version&gt;</div><div class="line">    nvm unalias &lt;name&gt;          Deletes the alias named &lt;name&gt;</div><div class="line">    nvm copy-packages &lt;version&gt; Install global NPM packages contained in &lt;version&gt; to current version</div><div class="line"></div><div class="line">Example:</div><div class="line">    nvm install v0.10.24        Install a specific version number</div><div class="line">    nvm use 0.10                Use the latest available 0.10.x release</div><div class="line">    nvm run 0.10.24 myApp.js    Run myApp.js using node v0.10.24</div><div class="line">    nvm alias default 0.10.24   Set default node version on a shell</div><div class="line"></div><div class="line">Note:</div><div class="line">    to remove, delete or uninstall nvm - just remove ~/.nvm, ~/.npm and ~/.bower folders</div></pre></td></tr></table></figure>
+<h2 id="通过nvm安装任意版本的node"><a href="#通过nvm安装任意版本的node" class="headerlink" title="通过nvm安装任意版本的node"></a>通过nvm安装任意版本的node</h2><blockquote>
+<p>nvm默认是从 <a href="http://nodejs.org/dist/" target="_blank" rel="external">http://nodejs.org/dist/</a> 下载的、国外服务器、必然很慢<br>好在nvm以及支持从镜像服务器下载包、于是我们可以方便的从七牛或者淘宝的node-dist镜像下载：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vi ~/.bash_profile #电脑从新启动加载的shell脚本或者命令然后把下面的命令添加到文件里面最后一行保存文件</div><div class="line">export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node</div><div class="line">source ~/git/nvm/nvm.sh</div></pre></td></tr></table></figure>
+<blockquote>
+<p>以上的行为是为了让每一次从新启动都不需要再次输入这些命令了、下面我们把那命令从新输入一下</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node &amp;&amp; source ~/git/nvm/nvm.sh</div><div class="line">nvm install 5.9.1 #可以安装多个不同的版本node！这里我安装的是5.9.1版本</div></pre></td></tr></table></figure>
+<blockquote>
+<p>然后您可以继续非常方便的安装各个版本的node了、您可以查看一下您当前已经安装的版本：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nvm ls</div><div class="line">-&gt; v5.9.1</div></pre></td></tr></table></figure>
+<blockquote>
+<p>于是你就会看到一段非常快速进度条</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">######################################################################## 100.0%</div><div class="line">Now using node v4.3.2</div></pre></td></tr></table></figure>
+<h1 id="windows环境搭建"><a href="#windows环境搭建" class="headerlink" title="windows环境搭建"></a>windows环境搭建</h1><blockquote>
+<p>首先看安装git工具</p>
+</blockquote>
+<h2 id="git-clone-nvmw"><a href="#git-clone-nvmw" class="headerlink" title="git clone nvmw"></a>git clone nvmw</h2><blockquote>
+<p>直接从 github clone nvmw 到本地、这里建议大家都使用    d:\git    目录存放git项目！还有重要的一点说明一下！就是我们所有的关于node方面的操作都要在git bash环境下面操作</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /d/git #切换目录至git</div><div class="line">git clone https://github.com/hakobera/nvmw.git</div></pre></td></tr></table></figure>
+<blockquote>
+<p>设置    d:\git\nvmw    目录到您的    path    环境变量中</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">set &quot;PATH=d:\git\nvmw;%PATH%&quot;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>从新打开您的终端输入    nvmw    </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">nvmw</div><div class="line">Usage:</div><div class="line">nvmw help                    Show this message</div><div class="line">nvmw install [version]       Download and install a [version]</div><div class="line">nvmw uninstall [version]     Uninstall a [version]</div><div class="line">nvmw use [version]           Modify PATH to use [version]</div><div class="line">nvmw ls                      List installed versions</div><div class="line">Example:</div><div class="line">nvmw install v0.6.0          Install a specific version number</div><div class="line">nvmw use v0.6.0              Use the specific version</div></pre></td></tr></table></figure>
+<h2 id="通过nvmw安装任意版本的node"><a href="#通过nvmw安装任意版本的node" class="headerlink" title="通过nvmw安装任意版本的node"></a>通过nvmw安装任意版本的node</h2><blockquote>
+<p>nvmw默认是从 <a href="http://nodejs.org/dist/" target="_blank" rel="external">http://nodejs.org/dist/</a> 下载的、国外服务器、必然很慢<br>好在nvmw以及支持从镜像服务器下载包、于是我们可以方便的从七牛或者淘宝的node-dist镜像下载：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">set &quot;NVMW_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node&quot;</div><div class="line">nvmw install 5.9.1</div></pre></td></tr></table></figure>
+<blockquote>
+<p>于是你就会看到一段非常快速进度条</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">######################################################################## 100.0%</div><div class="line">Now using node v4.3.2</div></pre></td></tr></table></figure>
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nvm/">nvm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nvmw/">nvmw</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-2016-05-11-supervisor-install-and-config" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/11/2016-05-11-supervisor-install-and-config/" class="article-date">
+      <time datetime="2016-05-11T13:06:20.000Z" itemprop="datePublished">2016-05-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/11/2016-05-11-supervisor-install-and-config/">supervisor安装配置使用</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="1-supervisor简介"><a href="#1-supervisor简介" class="headerlink" title="1.supervisor简介"></a>1.supervisor简介</h1><h2 id="1-1官网"><a href="#1-1官网" class="headerlink" title="1.1官网"></a>1.1官网</h2><p>  <a href="http://supervisord.org" target="_blank" rel="external">supervisor官网</a></p>
+<h2 id="1-2介绍"><a href="#1-2介绍" class="headerlink" title="1.2介绍"></a>1.2介绍</h2><blockquote>
+<p>Supervisor是一个进程控制系统。<br>它是一个C/S系统(注意: 其提供WEB接口给用户查询和控制)。<br>它允许用户去监控和控制在类UNIX系统的进程。<br>它的目标与launchd、daemontools和runit有些相似。<br>但是与它们不一样的是、它不是作为init(进程号pid是1)运行。<br>它是被用来控制进程、并且它在启动的时候和一般程序并无二致。<br>那么通俗点，它的作用是什么？<br>你的Nginx，Tomcat，memcache，Redis…会崩么？<br>那你自己写的服务器监测脚本呢？<br>好吧、不要再纠结了、交给Supervisor吧!<br>它会帮你维护这些、即使它们不小心崩了、Supervisor会帮你看住它们、维护它们。</p>
+</blockquote>
+<h1 id="2-安装和配置"><a href="#2-安装和配置" class="headerlink" title="2.安装和配置"></a>2.安装和配置</h1><h2 id="2-1安装"><a href="#2-1安装" class="headerlink" title="2.1安装"></a>2.1安装</h2><blockquote>
+<p>我们这里只介绍centos安装方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">yum install python-setuptools</div><div class="line">easy_install supervisor</div><div class="line">echo_supervisord_conf &gt; /etc/supervisord.conf</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="2-2配置"><a href="#2-2配置" class="headerlink" title="2.2配置"></a>2.2配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /etc/supervisord.conf</div></pre></td></tr></table></figure>
+<h2 id="2-3（program）配置模版"><a href="#2-3（program）配置模版" class="headerlink" title="2.3（program）配置模版"></a>2.3（program）配置模版</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">[program:laravel-worker1]</div><div class="line">process_name=%(program_name)s_%(process_num)02d</div><div class="line">command=php /home/wwwroot/site.webshowu.com/artisan queue:work redis --sleep=3 --tries=3 --daemon</div><div class="line">autostart=true</div><div class="line">autorestart=true</div><div class="line">user=root</div><div class="line">numprocs=3</div><div class="line">redirect_stderr=true</div><div class="line">stdout_logfile=/home/wwwlogs/worker1.log</div></pre></td></tr></table></figure>
+<h2 id="2-4（program）配置说明"><a href="#2-4（program）配置说明" class="headerlink" title="2.4（program）配置说明"></a>2.4（program）配置说明</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line">;*为必须填写项</div><div class="line">;*[program:应用名称]</div><div class="line">[program:cat]</div><div class="line">;*命令路径,如果使用python启动的程序应该为 python /home/test.py, </div><div class="line">;不建议放入/home/user/, 对于非user用户一般情况下是不能访问</div><div class="line">command=/bin/cat</div><div class="line">;当numprocs为1时,process_name=%(program_name)s</div><div class="line">;当numprocs&gt;=2时,%(program_name)s_%(process_num)02d</div><div class="line">process_name=%(program_name)s</div><div class="line">;进程数量</div><div class="line">numprocs=1</div><div class="line">;执行目录,若有/home/supervisor_test/test1.py</div><div class="line">;将directory设置成/home/supervisor_test</div><div class="line">;则command只需设置成python test1.py</div><div class="line">;否则command必须设置成绝对执行目录</div><div class="line">directory=/tmp</div><div class="line">;掩码:--- -w- -w-, 转换后rwx r-x w-x</div><div class="line">umask=022</div><div class="line">;优先级,值越高,最后启动,最先被关闭,默认值999</div><div class="line">priority=999</div><div class="line">;如果是true,当supervisor启动时,程序将会自动启动</div><div class="line">autostart=true</div><div class="line">;*自动重启</div><div class="line">autorestart=true</div><div class="line">;启动延时执行,默认1秒</div><div class="line">startsecs=10</div><div class="line">;启动尝试次数,默认3次</div><div class="line">startretries=3</div><div class="line">;当退出码是0,2时,执行重启,默认值0,2</div><div class="line">exitcodes=0,2</div><div class="line">;停止信号,默认TERM</div><div class="line">;中断:INT(类似于Ctrl+C)(kill -INT pid),退出后会将写文件或日志(推荐)</div><div class="line">;终止:TERM(kill -TERM pid)</div><div class="line">;挂起:HUP(kill -HUP pid),注意与Ctrl+Z/kill -stop pid不同</div><div class="line">;从容停止:QUIT(kill -QUIT pid)</div><div class="line">;KILL, USR1, USR2其他见命令(kill -l),说明1</div><div class="line">stopsignal=TERM</div><div class="line">stopwaitsecs=10</div><div class="line">;*以root用户执行</div><div class="line">user=root</div><div class="line">;重定向</div><div class="line">redirect_stderr=false</div><div class="line">stdout_logfile=/a/path</div><div class="line">stdout_logfile_maxbytes=1MB</div><div class="line">stdout_logfile_backups=10</div><div class="line">stdout_capture_maxbytes=1MB</div><div class="line">stderr_logfile=/a/path</div><div class="line">stderr_logfile_maxbytes=1MB</div><div class="line">stderr_logfile_backups=10</div><div class="line">stderr_capture_maxbytes=1MB</div><div class="line">;环境变量设置</div><div class="line">environment=A=&quot;1&quot;,B=&quot;2&quot;</div><div class="line">serverurl=AUTO</div></pre></td></tr></table></figure>
+<h2 id="2-5（inet-http-server）配置说明"><a href="#2-5（inet-http-server）配置说明" class="headerlink" title="2.5（inet_http_server）配置说明"></a>2.5（inet_http_server）配置说明</h2><blockquote>
+<p>可以使用浏览器查看和控制进程状态<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[inet_http_server]         ; inet (TCP) server disabled by default</div><div class="line">port=0.0.0.0:9001          ; (ip_address:port specifier, *:port for all iface)</div><div class="line">username=user              ; 用户名 (default is no username (open server))</div><div class="line">password=123               ; 密码 (default is no password (open server))</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h1 id="3-启动与关闭"><a href="#3-启动与关闭" class="headerlink" title="3.启动与关闭"></a>3.启动与关闭</h1><h2 id="3-1启动supervisor"><a href="#3-1启动supervisor" class="headerlink" title="3.1启动supervisor"></a>3.1启动supervisor</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">supervisord -c /etc/supervisord.conf</div></pre></td></tr></table></figure>
+<h2 id="3-2关闭supervisor"><a href="#3-2关闭supervisor" class="headerlink" title="3.2关闭supervisor"></a>3.2关闭supervisor</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">supervisorctl shutdown</div></pre></td></tr></table></figure>
+<h2 id="3-3重新载入配置"><a href="#3-3重新载入配置" class="headerlink" title="3.3重新载入配置"></a>3.3重新载入配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">supervisorctl reload</div></pre></td></tr></table></figure>
+<p>#说明unix系统进程信号<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">kill -1 //终端挂起或控制进程终止。当用户退出Shell时，由该进程启动的所有进程都会收到这个信号，默认动作为终止进程。</div><div class="line">kill -2 //键盘中断。当用户按下组合键时，用户终端向正在运行中的由该终端启动的程序发出此信号。默认动作为终止进程。</div><div class="line">kill -3 //键盘退出键被按下。当用户按下或组合键时，用户终端向正在运行中的由该终端启动的程序发出此信号。默认动作为退出程序。</div><div class="line">kill -8 //发生致命的运算错误时发出。不仅包括浮点运算错误，还包括溢出及除数为0等所有的算法错误。默认动作为终止进程并产生core文件。</div><div class="line">kill -9 //无条件终止进程。进程接收到该信号会立即终止，不进行清理和暂存工作。该信号不能被忽略、处理和阻塞，它向系统管理员提供了可以杀死任何进程的方法。</div><div class="line">kill -14 //定时器超时，默认动作为终止进程。</div><div class="line">kill -15 //程序结束信号，可以由 kill 命令产生。与SIGKILL不同的是，SIGTERM 信号可以被阻塞和终止，以便程序在退出前可以保存工作或清理临时文件等。</div></pre></td></tr></table></figure></p>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/centos/">centos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/supervisor/">supervisor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/进程管理控制/">进程管理控制</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-2016-05-11-svn-install-and-config" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/11/2016-05-11-svn-install-and-config/" class="article-date">
+      <time datetime="2016-05-11T12:54:43.000Z" itemprop="datePublished">2016-05-11</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/11/2016-05-11-svn-install-and-config/">svn安装配置使用</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="centos-6-5下面进行安装配置使用"><a href="#centos-6-5下面进行安装配置使用" class="headerlink" title="centos-6.5下面进行安装配置使用"></a>centos-6.5下面进行安装配置使用</h1><h2 id="1、判断是否安装成功"><a href="#1、判断是否安装成功" class="headerlink" title="1、判断是否安装成功"></a>1、判断是否安装成功</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">subversion -v</div></pre></td></tr></table></figure>
+<p>  svnserve, version 1.6.11 (r934486)<br>  出现上面的提示，说明安装成功。</p>
+<h2 id="2、svn版本查询"><a href="#2、svn版本查询" class="headerlink" title="2、svn版本查询"></a>2、svn版本查询</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svnserve --version</div></pre></td></tr></table></figure>
+<h2 id="3、安装svn"><a href="#3、安装svn" class="headerlink" title="3、安装svn"></a>3、安装svn</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum install subversion</div></pre></td></tr></table></figure>
+<h2 id="4、安装完成之后需要建立svn库"><a href="#4、安装完成之后需要建立svn库" class="headerlink" title="4、安装完成之后需要建立svn库"></a>4、安装完成之后需要建立svn库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir /opt/svn/repos</div><div class="line">svnadmin create /opt/svn/repos</div></pre></td></tr></table></figure>
+<p>  执行上面的命令后，自动在repos下建立多个文件， 分别是conf, db,format,hooks, locks, README.txt</p>
+<h2 id="5、配置svn文件基本上都是conf文件下面"><a href="#5、配置svn文件基本上都是conf文件下面" class="headerlink" title="5、配置svn文件基本上都是conf文件下面"></a>5、配置svn文件基本上都是conf文件下面</h2><h3 id="1、passwd文件（用户密码管理文件）"><a href="#1、passwd文件（用户密码管理文件）" class="headerlink" title="1、passwd文件（用户密码管理文件）"></a>1、passwd文件（用户密码管理文件）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[users]</div><div class="line"># harry = harry</div><div class="line"># sally = sally</div><div class="line">xxx = xxx</div></pre></td></tr></table></figure>
+<h3 id="2、authz文件（用户权限管理文件）"><a href="#2、authz文件（用户权限管理文件）" class="headerlink" title="2、authz文件（用户权限管理文件）"></a>2、authz文件（用户权限管理文件）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[/]</div><div class="line">xxx=rw</div><div class="line">x=r</div><div class="line">x=w</div></pre></td></tr></table></figure>
+<h3 id="3、svnserve-conf文件-svn管理配置文件"><a href="#3、svnserve-conf文件-svn管理配置文件" class="headerlink" title="3、svnserve.conf文件(svn管理配置文件)"></a>3、svnserve.conf文件(svn管理配置文件)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">anon-access = none # 使非授权用户无法访问</div><div class="line">auth-access = write # 使授权用户有写权限</div><div class="line">password-db = password #密码配置</div><div class="line">authz-db = authz   # 访问控制文件</div><div class="line">realm = /opt/svn/repos # 认证命名空间</div></pre></td></tr></table></figure>
+<p>  subversion会在认证提示里显示，并且作为凭证缓存的关键字。</p>
+<h2 id="6、启动svn服务"><a href="#6、启动svn服务" class="headerlink" title="6、启动svn服务"></a>6、启动svn服务</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svnserve -d -r /opt/svn</div></pre></td></tr></table></figure>
+<h2 id="7、svn提交自动更新插件代码如何配置"><a href="#7、svn提交自动更新插件代码如何配置" class="headerlink" title="7、svn提交自动更新插件代码如何配置"></a>7、svn提交自动更新插件代码如何配置</h2><p>之前我们建立了一个代码库之后有一个文件夹名字叫：hooks<br>下面建立一个文件 post-commit 这个文件必须为可执行程序文件权限必须是777<br>格式如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#!/bin/sh</div><div class="line">SVN=/usr/bin/svn</div><div class="line">WEB=/home/wwwroot/cbter</div><div class="line">$SVN update $WEB --username 用户名 --password 密码</div></pre></td></tr></table></figure></p>
+<h2 id="8、svn客户端执行代码"><a href="#8、svn客户端执行代码" class="headerlink" title="8、svn客户端执行代码"></a>8、svn客户端执行代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">svn co svn://xxx ./</div></pre></td></tr></table></figure>
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/centos/">centos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/svn/">svn</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/版本控制器/">版本控制器</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 Lambq
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>快速搭建node.js开发环境 | Lambq Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="osx、linux环境搭建
+如果你是windows环境开发、请跳过这里，直接查看下一章
+git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~/git 目录存放git项目
+
+12345pwd  #这是查看当前目录、如果不在用户目录下面、请切换。我使用的root所以切换到root下面。cd /root #切换目录至root下面mkdir git #建立一个g">
+<meta property="og:type" content="article">
+<meta property="og:title" content="快速搭建node.js开发环境">
+<meta property="og:url" content="http://lambq.com/2016/05/12/2016-05-12-nodejs-install-and-config/index.html">
+<meta property="og:site_name" content="Lambq Blog">
+<meta property="og:description" content="osx、linux环境搭建
+如果你是windows环境开发、请跳过这里，直接查看下一章
+git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~/git 目录存放git项目
+
+12345pwd  #这是查看当前目录、如果不在用户目录下面、请切换。我使用的root所以切换到root下面。cd /root #切换目录至root下面mkdir git #建立一个g">
+<meta property="og:updated_time" content="2016-05-12T07:03:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="快速搭建node.js开发环境">
+<meta name="twitter:description" content="osx、linux环境搭建
+如果你是windows环境开发、请跳过这里，直接查看下一章
+git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~/git 目录存放git项目
+
+12345pwd  #这是查看当前目录、如果不在用户目录下面、请切换。我使用的root所以切换到root下面。cd /root #切换目录至root下面mkdir git #建立一个g">
+  
+    <link rel="alternative" href="/atom.xml" title="Lambq Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+      <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          rootUrl: '/',
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/" title="Hi Mate">Lambq</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">lambq</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">博客首页</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=415113157@qq.com" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/lambq" title="github">github</a>
+                            
+                                <a class="fl linkedin" target="_blank" href="https://www.linkedin.com/in/%E6%9D%BE%E5%B3%A1-%E6%9D%8E-077312108" title="linkedin">linkedin</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <a href="/tags/centos/" style="font-size: 20px;">centos</a> <a href="/tags/cnpm/" style="font-size: 10px;">cnpm</a> <a href="/tags/cron/" style="font-size: 10px;">cron</a> <a href="/tags/db/" style="font-size: 10px;">db</a> <a href="/tags/git/" style="font-size: 20px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/laravel/" style="font-size: 20px;">laravel</a> <a href="/tags/migration/" style="font-size: 10px;">migration</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/nvm/" style="font-size: 10px;">nvm</a> <a href="/tags/nvmw/" style="font-size: 10px;">nvmw</a> <a href="/tags/queue/" style="font-size: 10px;">queue</a> <a href="/tags/ssh-key/" style="font-size: 10px;">ssh key</a> <a href="/tags/supervisor/" style="font-size: 10px;">supervisor</a> <a href="/tags/svn/" style="font-size: 10px;">svn</a> <a href="/tags/版本控制器/" style="font-size: 10px;">版本控制器</a> <a href="/tags/进程管理控制/" style="font-size: 10px;">进程管理控制</a>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.github.com/lambq">github</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">计算机科学与人工智能爱好者！一个web和移动开发人员、攻城狮、绝对是一个技术的家伙。也是一个旅行者和探险家、想成为一个终身学习者、这个应该不是梦！</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="Me">Lambq</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="Me">Lambq</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">lambq</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">博客首页</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=415113157@qq.com" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/lambq" title="github">github</a>
+                    
+                        <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/%E6%9D%BE%E5%B3%A1-%E6%9D%8E-077312108" title="linkedin">linkedin</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-2016-05-12-nodejs-install-and-config" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/12/2016-05-12-nodejs-install-and-config/" class="article-date">
+      <time datetime="2016-05-12T06:05:05.000Z" itemprop="datePublished">2016-05-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      快速搭建node.js开发环境
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nvm/">nvm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nvmw/">nvmw</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="osx、linux环境搭建"><a href="#osx、linux环境搭建" class="headerlink" title="osx、linux环境搭建"></a>osx、linux环境搭建</h1><blockquote>
+<p>如果你是windows环境开发、请跳过这里，直接查看下一章</p>
+<h2 id="git-clone-nvm"><a href="#git-clone-nvm" class="headerlink" title="git clone nvm"></a>git clone nvm</h2><p>直接从 github clone nvm到本地、这里建议大家都使用 ~/git 目录存放git项目</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">pwd  #这是查看当前目录、如果不在用户目录下面、请切换。我使用的root所以切换到root下面。</div><div class="line">cd /root #切换目录至root下面</div><div class="line">mkdir git #建立一个git目录</div><div class="line">cd ~/git #切换到更才建立的git目录下面</div><div class="line">git clone https://github.com/creationix/nvm.git #从github把nvm代码down到本地</div></pre></td></tr></table></figure>
+<blockquote>
+<p>配置终端启动时自动执行 source ~/git/nvm/nvm.sh<br>在 ~/.bashrc 或者 ~/.bash_profile 或者 ~/.profile 或者 ~/.zshrc 文件添加以下命令</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source ~/git/nvm/nvm.sh</div></pre></td></tr></table></figure>
+<blockquote>
+<p>重新打开您的终端输入    nvm</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">  nvm</div><div class="line">  Node Version Manager</div><div class="line"></div><div class="line">Usage:</div><div class="line">    nvm help                    Show this message</div><div class="line">    nvm --version               Print out the latest released version of nvm</div><div class="line">    nvm install [-s] &lt;version&gt;  Download and install a &lt;version&gt;, [-s] from source</div><div class="line">    nvm uninstall &lt;version&gt;     Uninstall a version</div><div class="line">    nvm use &lt;version&gt;           Modify PATH to use &lt;version&gt;</div><div class="line">    nvm run &lt;version&gt; [&lt;args&gt;]  Run &lt;version&gt; with &lt;args&gt; as arguments</div><div class="line">    nvm current                 Display currently activated version</div><div class="line">    nvm ls                      List installed versions</div><div class="line">    nvm ls &lt;version&gt;            List versions matching a given description</div><div class="line">    nvm ls-remote               List remote versions available for install</div><div class="line">    nvm deactivate              Undo effects of NVM on current shell</div><div class="line">    nvm alias [&lt;pattern&gt;]       Show all aliases beginning with &lt;pattern&gt;</div><div class="line">    nvm alias &lt;name&gt; &lt;version&gt;  Set an alias named &lt;name&gt; pointing to &lt;version&gt;</div><div class="line">    nvm unalias &lt;name&gt;          Deletes the alias named &lt;name&gt;</div><div class="line">    nvm copy-packages &lt;version&gt; Install global NPM packages contained in &lt;version&gt; to current version</div><div class="line"></div><div class="line">Example:</div><div class="line">    nvm install v0.10.24        Install a specific version number</div><div class="line">    nvm use 0.10                Use the latest available 0.10.x release</div><div class="line">    nvm run 0.10.24 myApp.js    Run myApp.js using node v0.10.24</div><div class="line">    nvm alias default 0.10.24   Set default node version on a shell</div><div class="line"></div><div class="line">Note:</div><div class="line">    to remove, delete or uninstall nvm - just remove ~/.nvm, ~/.npm and ~/.bower folders</div></pre></td></tr></table></figure>
+<h2 id="通过nvm安装任意版本的node"><a href="#通过nvm安装任意版本的node" class="headerlink" title="通过nvm安装任意版本的node"></a>通过nvm安装任意版本的node</h2><blockquote>
+<p>nvm默认是从 <a href="http://nodejs.org/dist/" target="_blank" rel="external">http://nodejs.org/dist/</a> 下载的、国外服务器、必然很慢<br>好在nvm以及支持从镜像服务器下载包、于是我们可以方便的从七牛或者淘宝的node-dist镜像下载：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vi ~/.bash_profile #电脑从新启动加载的shell脚本或者命令然后把下面的命令添加到文件里面最后一行保存文件</div><div class="line">export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node</div><div class="line">source ~/git/nvm/nvm.sh</div></pre></td></tr></table></figure>
+<blockquote>
+<p>以上的行为是为了让每一次从新启动都不需要再次输入这些命令了、下面我们把那命令从新输入一下</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node &amp;&amp; source ~/git/nvm/nvm.sh</div><div class="line">nvm install 5.9.1 #可以安装多个不同的版本node！这里我安装的是5.9.1版本</div></pre></td></tr></table></figure>
+<blockquote>
+<p>然后您可以继续非常方便的安装各个版本的node了、您可以查看一下您当前已经安装的版本：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nvm ls</div><div class="line">-&gt; v5.9.1</div></pre></td></tr></table></figure>
+<blockquote>
+<p>于是你就会看到一段非常快速进度条</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">######################################################################## 100.0%</div><div class="line">Now using node v4.3.2</div></pre></td></tr></table></figure>
+<h1 id="windows环境搭建"><a href="#windows环境搭建" class="headerlink" title="windows环境搭建"></a>windows环境搭建</h1><blockquote>
+<p>首先看安装git工具</p>
+</blockquote>
+<h2 id="git-clone-nvmw"><a href="#git-clone-nvmw" class="headerlink" title="git clone nvmw"></a>git clone nvmw</h2><blockquote>
+<p>直接从 github clone nvmw 到本地、这里建议大家都使用    d:\git    目录存放git项目！还有重要的一点说明一下！就是我们所有的关于node方面的操作都要在git bash环境下面操作</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /d/git #切换目录至git</div><div class="line">git clone https://github.com/hakobera/nvmw.git</div></pre></td></tr></table></figure>
+<blockquote>
+<p>设置    d:\git\nvmw    目录到您的    path    环境变量中</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">set &quot;PATH=d:\git\nvmw;%PATH%&quot;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>从新打开您的终端输入    nvmw    </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">nvmw</div><div class="line">Usage:</div><div class="line">nvmw help                    Show this message</div><div class="line">nvmw install [version]       Download and install a [version]</div><div class="line">nvmw uninstall [version]     Uninstall a [version]</div><div class="line">nvmw use [version]           Modify PATH to use [version]</div><div class="line">nvmw ls                      List installed versions</div><div class="line">Example:</div><div class="line">nvmw install v0.6.0          Install a specific version number</div><div class="line">nvmw use v0.6.0              Use the specific version</div></pre></td></tr></table></figure>
+<h2 id="通过nvmw安装任意版本的node"><a href="#通过nvmw安装任意版本的node" class="headerlink" title="通过nvmw安装任意版本的node"></a>通过nvmw安装任意版本的node</h2><blockquote>
+<p>nvmw默认是从 <a href="http://nodejs.org/dist/" target="_blank" rel="external">http://nodejs.org/dist/</a> 下载的、国外服务器、必然很慢<br>好在nvmw以及支持从镜像服务器下载包、于是我们可以方便的从七牛或者淘宝的node-dist镜像下载：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">set &quot;NVMW_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node&quot;</div><div class="line">nvmw install 5.9.1</div></pre></td></tr></table></figure>
+<blockquote>
+<p>于是你就会看到一段非常快速进度条</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">######################################################################## 100.0%</div><div class="line">Now using node v4.3.2</div></pre></td></tr></table></figure>
+      
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/05/12/2016-05-12-nodejs-install-and-config/">快速搭建node.js开发环境</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Lambq 的个人博客">Lambq</a></p>
+        <p><span>发布时间:</span>2016年05月12日 - 14时05分</p>
+        <p><span>最后更新:</span>2016年05月12日 - 15时03分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/12/2016-05-12-nodejs-install-and-config/" title="快速搭建node.js开发环境">http://lambq.com/2016/05/12/2016-05-12-nodejs-install-and-config/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://lambq.com/2016/05/12/2016-05-12-nodejs-install-and-config/　　作者: Lambq" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2016/05/12/2016-05-12-cnpm-install-and-config/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          cnpm安装配置给npm加速
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/11/2016-05-11-supervisor-install-and-config/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">supervisor安装配置使用</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#osx、linux环境搭建"><span class="toc-number">1.</span> <span class="toc-text">osx、linux环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#git-clone-nvm"><span class="toc-number">1.1.</span> <span class="toc-text">git clone nvm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通过nvm安装任意版本的node"><span class="toc-number">1.2.</span> <span class="toc-text">通过nvm安装任意版本的node</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#windows环境搭建"><span class="toc-number">2.</span> <span class="toc-text">windows环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#git-clone-nvmw"><span class="toc-number">2.1.</span> <span class="toc-text">git clone nvmw</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通过nvmw安装任意版本的node"><span class="toc-number">2.2.</span> <span class="toc-text">通过nvmw安装任意版本的node</span></a></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/05/12/2016-05-12-cnpm-install-and-config/" title="上一篇: cnpm安装配置给npm加速">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/05/11/2016-05-11-supervisor-install-and-config/" title="下一篇: supervisor安装配置使用">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/02/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/26/2016-06-26-laravel-db-mig-action/">laravel数据库迁移</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/13/2016-05-13-laravel-cron-queue/">laravel的任务调度(cron)和队列一起使用制作采集器</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/12/2016-05-12-git-install-and-config/">git的安装配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/12/2016-05-12-cnpm-install-and-config/">cnpm安装配置给npm加速</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/12/2016-05-12-nodejs-install-and-config/">快速搭建node.js开发环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/11/2016-05-11-supervisor-install-and-config/">supervisor安装配置使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/11/2016-05-11-svn-install-and-config/">svn安装配置使用</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2017 Lambq
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 24;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+
+  </div>
+</body>
+</html>
