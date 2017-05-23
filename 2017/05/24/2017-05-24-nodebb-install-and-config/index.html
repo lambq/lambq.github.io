@@ -3,21 +3,33 @@
 <head>
   <meta charset="utf-8">
   
-  <title>安福照耀我的人生之路 | Lambq Blog</title>
+  <title>nodebb安装配置使用 | Lambq Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安福照耀我的人生之路2013年1月4日（小寒的前一天），也是我命运改变的一天！我来到了，一间简单的办公室、除了几位妙龄少女，就剩下几位即将成为IT界的码农和一些静止的办公用品。人生只有2个字（奋斗）、我就这样登上了、一条行驶在黑暗里的小船、正经历着那黑暗里波涛汹涌的骇浪。
-2014年3月在我们辛苦努力的一年里，我们迎来了第一次黎明的曙光，业务起来了。这样的征兆也预示的我们，又一个夜幕即将降临，所以">
+  <meta name="description" content="centos下面进行安装配置使用
+我的服务器上面已经部署了lnmp运行环境、使用的是lnmp.org军哥的shell包redis直接使用lnmp包里面编译安装的
+
+首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：1yum -y update
+安装nodebb基础软件包依赖：1yum -y install ImageMagick npm
+使用nvm来安装node版本。1234c">
 <meta property="og:type" content="article">
-<meta property="og:title" content="安福照耀我的人生之路">
-<meta property="og:url" content="http://lambq.com/2017/04/18/2017-04-18-work-log/index.html">
+<meta property="og:title" content="nodebb安装配置使用">
+<meta property="og:url" content="http://lambq.com/2017/05/24/2017-05-24-nodebb-install-and-config/index.html">
 <meta property="og:site_name" content="Lambq Blog">
-<meta property="og:description" content="安福照耀我的人生之路2013年1月4日（小寒的前一天），也是我命运改变的一天！我来到了，一间简单的办公室、除了几位妙龄少女，就剩下几位即将成为IT界的码农和一些静止的办公用品。人生只有2个字（奋斗）、我就这样登上了、一条行驶在黑暗里的小船、正经历着那黑暗里波涛汹涌的骇浪。
-2014年3月在我们辛苦努力的一年里，我们迎来了第一次黎明的曙光，业务起来了。这样的征兆也预示的我们，又一个夜幕即将降临，所以">
-<meta property="og:updated_time" content="2017-04-17T22:28:19.000Z">
+<meta property="og:description" content="centos下面进行安装配置使用
+我的服务器上面已经部署了lnmp运行环境、使用的是lnmp.org军哥的shell包redis直接使用lnmp包里面编译安装的
+
+首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：1yum -y update
+安装nodebb基础软件包依赖：1yum -y install ImageMagick npm
+使用nvm来安装node版本。1234c">
+<meta property="og:updated_time" content="2017-05-23T17:02:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="安福照耀我的人生之路">
-<meta name="twitter:description" content="安福照耀我的人生之路2013年1月4日（小寒的前一天），也是我命运改变的一天！我来到了，一间简单的办公室、除了几位妙龄少女，就剩下几位即将成为IT界的码农和一些静止的办公用品。人生只有2个字（奋斗）、我就这样登上了、一条行驶在黑暗里的小船、正经历着那黑暗里波涛汹涌的骇浪。
-2014年3月在我们辛苦努力的一年里，我们迎来了第一次黎明的曙光，业务起来了。这样的征兆也预示的我们，又一个夜幕即将降临，所以">
+<meta name="twitter:title" content="nodebb安装配置使用">
+<meta name="twitter:description" content="centos下面进行安装配置使用
+我的服务器上面已经部署了lnmp运行环境、使用的是lnmp.org军哥的shell包redis直接使用lnmp包里面编译安装的
+
+首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：1yum -y update
+安装nodebb基础软件包依赖：1yum -y install ImageMagick npm
+使用nvm来安装node版本。1234c">
   
     <link rel="alternative" href="/atom.xml" title="Lambq Blog" type="application/atom+xml">
   
@@ -207,11 +219,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-2017-04-18-work-log" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-2017-05-24-nodebb-install-and-config" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/04/18/2017-04-18-work-log/" class="article-date">
-      <time datetime="2017-04-17T16:31:07.000Z" itemprop="datePublished">2017-04-18</time>
+      <a href="/2017/05/24/2017-05-24-nodebb-install-and-config/" class="article-date">
+      <time datetime="2017-05-23T16:40:25.000Z" itemprop="datePublished">2017-05-24</time>
 </a>
     </div>
   
@@ -224,7 +236,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      安福照耀我的人生之路
+      nodebb安装配置使用
     </h1>
   
 
@@ -235,7 +247,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/work/">work</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/worklog/">worklog</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodebb/">nodebb</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -245,11 +257,18 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="安福照耀我的人生之路"><a href="#安福照耀我的人生之路" class="headerlink" title="安福照耀我的人生之路"></a>安福照耀我的人生之路</h1><pre><code>2013年1月4日（小寒的前一天），也是我命运改变的一天！我来到了，一间简单的办公室、除了几位妙龄少女，就剩下几位即将成为IT界的码农和一些静止的办公用品。人生只有2个字（奋斗）、我就这样登上了、一条行驶在黑暗里的小船、正经历着那黑暗里波涛汹涌的骇浪。
-2014年3月在我们辛苦努力的一年里，我们迎来了第一次黎明的曙光，业务起来了。这样的征兆也预示的我们，又一个夜幕即将降临，所以我们要加强防护，努力形成自己的壁垒。这一次的征兆，警示着我们努力的张开眼睛，不能碰到黑暗里的冰山！我们就这样继续前行着……
-安福的互联网风雨路，谱写着一个个快速成长的黑马，日渐壮大的团队，不断的挑头，寻找下一个前行的方向，不禁地让人困乏！风不停的咆哮着，寒气刺骨，自己只能咬牙切齿！就是不断的寻找阳光的彼岸。恶劣的环境，使人不断的出现幻想；内心的使命，使人一次次的惊醒。就这样我坚持不住了，病倒了，这份固有的坚持，使我明白了，活着的意义！
-原谅自私的我、毕竟也曾努力去做一个骄傲的安福人……
-</code></pre>
+        <h1 id="centos下面进行安装配置使用"><a href="#centos下面进行安装配置使用" class="headerlink" title="centos下面进行安装配置使用"></a>centos下面进行安装配置使用</h1><blockquote>
+<p>我的服务器上面已经部署了lnmp运行环境、使用的是<a href="https://lnmp.org" target="_blank" rel="external">lnmp.org军哥的shell包</a><br>redis直接使用lnmp包里面编译安装的</p>
+</blockquote>
+<h2 id="首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做："><a href="#首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：" class="headerlink" title="首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做："></a>首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y update</div></pre></td></tr></table></figure>
+<h2 id="安装nodebb基础软件包依赖："><a href="#安装nodebb基础软件包依赖：" class="headerlink" title="安装nodebb基础软件包依赖："></a>安装nodebb基础软件包依赖：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install ImageMagick npm</div></pre></td></tr></table></figure>
+<h2 id="使用nvm来安装node版本。"><a href="#使用nvm来安装node版本。" class="headerlink" title="使用nvm来安装node版本。"></a>使用nvm来安装node版本。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">curl https://raw.githubusercontent.com/creationix/nvm/v0.13.1/install.sh | bash</div><div class="line">source ~/.bash_profile</div><div class="line">nvm list-remote</div><div class="line">nvm install v0.12.7 # as of this writing check the result of the list-remote to see all choices</div></pre></td></tr></table></figure>
+<h2 id="down最新的nodebb源代码到本地"><a href="#down最新的nodebb源代码到本地" class="headerlink" title="down最新的nodebb源代码到本地"></a>down最新的nodebb源代码到本地</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir /home/node</div><div class="line">git clone -b v1.0.0 https://github.com/NodeBB/NodeBB nodebb</div></pre></td></tr></table></figure>
+<h2 id="安装nodebb的依赖库"><a href="#安装nodebb的依赖库" class="headerlink" title="安装nodebb的依赖库"></a>安装nodebb的依赖库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd nodebb</div><div class="line">npm install</div></pre></td></tr></table></figure>
+<h2 id="启动nodebb安装脚本："><a href="#启动nodebb安装脚本：" class="headerlink" title="启动nodebb安装脚本："></a>启动nodebb安装脚本：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./nodebb setup</div></pre></td></tr></table></figure>
+<h2 id="运行nodebb论坛："><a href="#运行nodebb论坛：" class="headerlink" title="运行nodebb论坛："></a>运行nodebb论坛：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./nodebb start</div></pre></td></tr></table></figure>
+<h2 id="配置nginx作为代理："><a href="#配置nginx作为代理：" class="headerlink" title="配置nginx作为代理："></a>配置nginx作为代理：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">    listen 80;</div><div class="line"></div><div class="line">    server_name forum.example.org;</div><div class="line"></div><div class="line">    location / &#123;</div><div class="line">        proxy_set_header X-Real-IP $remote_addr;</div><div class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</div><div class="line">        proxy_set_header X-Forwarded-Proto $scheme;</div><div class="line">        proxy_set_header Host $http_host;</div><div class="line">        proxy_set_header X-NginX-Proxy true;</div><div class="line"></div><div class="line">        proxy_pass http://127.0.0.1:4567;</div><div class="line">        proxy_redirect off;</div><div class="line"></div><div class="line">        # Socket.IO Support</div><div class="line">        proxy_http_version 1.1;</div><div class="line">        proxy_set_header Upgrade $http_upgrade;</div><div class="line">        proxy_set_header Connection &quot;upgrade&quot;;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
       
       
     </div>
@@ -258,13 +277,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/04/18/2017-04-18-work-log/">安福照耀我的人生之路</a></p>
+        <p><span>本文标题:</span><a href="/2017/05/24/2017-05-24-nodebb-install-and-config/">nodebb安装配置使用</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Lambq 的个人博客">Lambq</a></p>
-        <p><span>发布时间:</span>2017年04月18日 - 00时31分</p>
-        <p><span>最后更新:</span>2017年04月18日 - 06时28分</p>
+        <p><span>发布时间:</span>2017年05月24日 - 00时40分</p>
+        <p><span>最后更新:</span>2017年05月24日 - 01时02分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/04/18/2017-04-18-work-log/" title="安福照耀我的人生之路">http://lambq.com/2017/04/18/2017-04-18-work-log/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://lambq.com/2017/04/18/2017-04-18-work-log/　　作者: Lambq" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/05/24/2017-05-24-nodebb-install-and-config/" title="nodebb安装配置使用">http://lambq.com/2017/05/24/2017-05-24-nodebb-install-and-config/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://lambq.com/2017/05/24/2017-05-24-nodebb-install-and-config/　　作者: Lambq" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -277,18 +296,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/05/24/2017-05-24-nodebb-install-and-config/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          nodebb安装配置使用
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/06/26/2016-06-26-laravel-db-mig-action/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">laravel数据库迁移</div>
+    <a href="/2017/04/18/2017-04-18-work-log/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">安福照耀我的人生之路</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -299,7 +309,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安福照耀我的人生之路"><span class="toc-number">1.</span> <span class="toc-text">安福照耀我的人生之路</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#centos下面进行安装配置使用"><span class="toc-number">1.</span> <span class="toc-text">centos下面进行安装配置使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做："><span class="toc-number">1.1.</span> <span class="toc-text">首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装nodebb基础软件包依赖："><span class="toc-number">1.2.</span> <span class="toc-text">安装nodebb基础软件包依赖：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用nvm来安装node版本。"><span class="toc-number">1.3.</span> <span class="toc-text">使用nvm来安装node版本。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#down最新的nodebb源代码到本地"><span class="toc-number">1.4.</span> <span class="toc-text">down最新的nodebb源代码到本地</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装nodebb的依赖库"><span class="toc-number">1.5.</span> <span class="toc-text">安装nodebb的依赖库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动nodebb安装脚本："><span class="toc-number">1.6.</span> <span class="toc-text">启动nodebb安装脚本：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行nodebb论坛："><span class="toc-number">1.7.</span> <span class="toc-text">运行nodebb论坛：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置nginx作为代理："><span class="toc-number">1.8.</span> <span class="toc-text">配置nginx作为代理：</span></a></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -350,13 +360,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/05/24/2017-05-24-nodebb-install-and-config/" title="上一篇: nodebb安装配置使用">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/06/26/2016-06-26-laravel-db-mig-action/" title="下一篇: laravel数据库迁移">
+            <a href="/2017/04/18/2017-04-18-work-log/" title="下一篇: 安福照耀我的人生之路">
                 <i class="fa fa-angle-right"></i>
             </a>
         
