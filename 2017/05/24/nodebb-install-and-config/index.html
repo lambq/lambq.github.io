@@ -3,30 +3,33 @@
 <head>
   <meta charset="utf-8">
   
-  <title>快速搭建node.js开发环境 | Lambq Blog</title>
+  <title>nodebb安装配置使用 | Lambq Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="osx、linux环境搭建
-如果你是windows环境开发、请跳过这里，直接查看下一章
-git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~/git 目录存放git项目
+  <meta name="description" content="centos下面进行安装配置使用
+我的服务器上面已经部署了lnmp运行环境、使用的是lnmp.org军哥的shell包redis直接使用lnmp包里面编译安装的
 
-12345pwd  #这是查看当前目录、如果不在用户目录下面、请切换。我使用的root所以切换到root下面。cd /root #切换目录至root下面mkdir git #建立一个g">
+首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：1yum -y update
+安装nodebb基础软件包依赖：1yum -y install ImageMagick npm
+使用nvm来安装node版本。1234c">
 <meta property="og:type" content="article">
-<meta property="og:title" content="快速搭建node.js开发环境">
-<meta property="og:url" content="http://lambq.com/2016/05/12/2016-05-12-nodejs-install-and-config/index.html">
+<meta property="og:title" content="nodebb安装配置使用">
+<meta property="og:url" content="http://lambq.com/2017/05/24/nodebb-install-and-config/index.html">
 <meta property="og:site_name" content="Lambq Blog">
-<meta property="og:description" content="osx、linux环境搭建
-如果你是windows环境开发、请跳过这里，直接查看下一章
-git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~/git 目录存放git项目
+<meta property="og:description" content="centos下面进行安装配置使用
+我的服务器上面已经部署了lnmp运行环境、使用的是lnmp.org军哥的shell包redis直接使用lnmp包里面编译安装的
 
-12345pwd  #这是查看当前目录、如果不在用户目录下面、请切换。我使用的root所以切换到root下面。cd /root #切换目录至root下面mkdir git #建立一个g">
-<meta property="og:updated_time" content="2016-05-12T07:03:22.000Z">
+首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：1yum -y update
+安装nodebb基础软件包依赖：1yum -y install ImageMagick npm
+使用nvm来安装node版本。1234c">
+<meta property="og:updated_time" content="2017-05-23T17:02:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="快速搭建node.js开发环境">
-<meta name="twitter:description" content="osx、linux环境搭建
-如果你是windows环境开发、请跳过这里，直接查看下一章
-git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~/git 目录存放git项目
+<meta name="twitter:title" content="nodebb安装配置使用">
+<meta name="twitter:description" content="centos下面进行安装配置使用
+我的服务器上面已经部署了lnmp运行环境、使用的是lnmp.org军哥的shell包redis直接使用lnmp包里面编译安装的
 
-12345pwd  #这是查看当前目录、如果不在用户目录下面、请切换。我使用的root所以切换到root下面。cd /root #切换目录至root下面mkdir git #建立一个g">
+首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：1yum -y update
+安装nodebb基础软件包依赖：1yum -y install ImageMagick npm
+使用nvm来安装node版本。1234c">
   
     <link rel="alternative" href="/atom.xml" title="Lambq Blog" type="application/atom+xml">
   
@@ -216,11 +219,11 @@ git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-2016-05-12-nodejs-install-and-config" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-nodebb-install-and-config" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/12/2016-05-12-nodejs-install-and-config/" class="article-date">
-      <time datetime="2016-05-12T06:05:05.000Z" itemprop="datePublished">2016-05-12</time>
+      <a href="/2017/05/24/nodebb-install-and-config/" class="article-date">
+      <time datetime="2017-05-23T16:40:25.000Z" itemprop="datePublished">2017-05-24</time>
 </a>
     </div>
   
@@ -233,7 +236,7 @@ git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~
         
   
     <h1 class="article-title" itemprop="name">
-      快速搭建node.js开发环境
+      nodebb安装配置使用
     </h1>
   
 
@@ -244,7 +247,7 @@ git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nvm/">nvm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nvmw/">nvmw</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodebb/">nodebb</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -254,58 +257,18 @@ git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="osx、linux环境搭建"><a href="#osx、linux环境搭建" class="headerlink" title="osx、linux环境搭建"></a>osx、linux环境搭建</h1><blockquote>
-<p>如果你是windows环境开发、请跳过这里，直接查看下一章</p>
-<h2 id="git-clone-nvm"><a href="#git-clone-nvm" class="headerlink" title="git clone nvm"></a>git clone nvm</h2><p>直接从 github clone nvm到本地、这里建议大家都使用 ~/git 目录存放git项目</p>
+        <h1 id="centos下面进行安装配置使用"><a href="#centos下面进行安装配置使用" class="headerlink" title="centos下面进行安装配置使用"></a>centos下面进行安装配置使用</h1><blockquote>
+<p>我的服务器上面已经部署了lnmp运行环境、使用的是<a href="https://lnmp.org" target="_blank" rel="external">lnmp.org军哥的shell包</a><br>redis直接使用lnmp包里面编译安装的</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">pwd  #这是查看当前目录、如果不在用户目录下面、请切换。我使用的root所以切换到root下面。</div><div class="line">cd /root #切换目录至root下面</div><div class="line">mkdir git #建立一个git目录</div><div class="line">cd ~/git #切换到更才建立的git目录下面</div><div class="line">git clone https://github.com/creationix/nvm.git #从github把nvm代码down到本地</div></pre></td></tr></table></figure>
-<blockquote>
-<p>配置终端启动时自动执行 source ~/git/nvm/nvm.sh<br>在 ~/.bashrc 或者 ~/.bash_profile 或者 ~/.profile 或者 ~/.zshrc 文件添加以下命令</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">source ~/git/nvm/nvm.sh</div></pre></td></tr></table></figure>
-<blockquote>
-<p>重新打开您的终端输入    nvm</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">  nvm</div><div class="line">  Node Version Manager</div><div class="line"></div><div class="line">Usage:</div><div class="line">    nvm help                    Show this message</div><div class="line">    nvm --version               Print out the latest released version of nvm</div><div class="line">    nvm install [-s] &lt;version&gt;  Download and install a &lt;version&gt;, [-s] from source</div><div class="line">    nvm uninstall &lt;version&gt;     Uninstall a version</div><div class="line">    nvm use &lt;version&gt;           Modify PATH to use &lt;version&gt;</div><div class="line">    nvm run &lt;version&gt; [&lt;args&gt;]  Run &lt;version&gt; with &lt;args&gt; as arguments</div><div class="line">    nvm current                 Display currently activated version</div><div class="line">    nvm ls                      List installed versions</div><div class="line">    nvm ls &lt;version&gt;            List versions matching a given description</div><div class="line">    nvm ls-remote               List remote versions available for install</div><div class="line">    nvm deactivate              Undo effects of NVM on current shell</div><div class="line">    nvm alias [&lt;pattern&gt;]       Show all aliases beginning with &lt;pattern&gt;</div><div class="line">    nvm alias &lt;name&gt; &lt;version&gt;  Set an alias named &lt;name&gt; pointing to &lt;version&gt;</div><div class="line">    nvm unalias &lt;name&gt;          Deletes the alias named &lt;name&gt;</div><div class="line">    nvm copy-packages &lt;version&gt; Install global NPM packages contained in &lt;version&gt; to current version</div><div class="line"></div><div class="line">Example:</div><div class="line">    nvm install v0.10.24        Install a specific version number</div><div class="line">    nvm use 0.10                Use the latest available 0.10.x release</div><div class="line">    nvm run 0.10.24 myApp.js    Run myApp.js using node v0.10.24</div><div class="line">    nvm alias default 0.10.24   Set default node version on a shell</div><div class="line"></div><div class="line">Note:</div><div class="line">    to remove, delete or uninstall nvm - just remove ~/.nvm, ~/.npm and ~/.bower folders</div></pre></td></tr></table></figure>
-<h2 id="通过nvm安装任意版本的node"><a href="#通过nvm安装任意版本的node" class="headerlink" title="通过nvm安装任意版本的node"></a>通过nvm安装任意版本的node</h2><blockquote>
-<p>nvm默认是从 <a href="http://nodejs.org/dist/" target="_blank" rel="external">http://nodejs.org/dist/</a> 下载的、国外服务器、必然很慢<br>好在nvm以及支持从镜像服务器下载包、于是我们可以方便的从七牛或者淘宝的node-dist镜像下载：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">vi ~/.bash_profile #电脑从新启动加载的shell脚本或者命令然后把下面的命令添加到文件里面最后一行保存文件</div><div class="line">export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node</div><div class="line">source ~/git/nvm/nvm.sh</div></pre></td></tr></table></figure>
-<blockquote>
-<p>以上的行为是为了让每一次从新启动都不需要再次输入这些命令了、下面我们把那命令从新输入一下</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node &amp;&amp; source ~/git/nvm/nvm.sh</div><div class="line">nvm install 5.9.1 #可以安装多个不同的版本node！这里我安装的是5.9.1版本</div></pre></td></tr></table></figure>
-<blockquote>
-<p>然后您可以继续非常方便的安装各个版本的node了、您可以查看一下您当前已经安装的版本：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nvm ls</div><div class="line">-&gt; v5.9.1</div></pre></td></tr></table></figure>
-<blockquote>
-<p>于是你就会看到一段非常快速进度条</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">######################################################################## 100.0%</div><div class="line">Now using node v4.3.2</div></pre></td></tr></table></figure>
-<h1 id="windows环境搭建"><a href="#windows环境搭建" class="headerlink" title="windows环境搭建"></a>windows环境搭建</h1><blockquote>
-<p>首先看安装git工具</p>
-</blockquote>
-<h2 id="git-clone-nvmw"><a href="#git-clone-nvmw" class="headerlink" title="git clone nvmw"></a>git clone nvmw</h2><blockquote>
-<p>直接从 github clone nvmw 到本地、这里建议大家都使用    d:\git    目录存放git项目！还有重要的一点说明一下！就是我们所有的关于node方面的操作都要在git bash环境下面操作</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /d/git #切换目录至git</div><div class="line">git clone https://github.com/hakobera/nvmw.git</div></pre></td></tr></table></figure>
-<blockquote>
-<p>设置    d:\git\nvmw    目录到您的    path    环境变量中</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">set &quot;PATH=d:\git\nvmw;%PATH%&quot;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>从新打开您的终端输入    nvmw    </p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">nvmw</div><div class="line">Usage:</div><div class="line">nvmw help                    Show this message</div><div class="line">nvmw install [version]       Download and install a [version]</div><div class="line">nvmw uninstall [version]     Uninstall a [version]</div><div class="line">nvmw use [version]           Modify PATH to use [version]</div><div class="line">nvmw ls                      List installed versions</div><div class="line">Example:</div><div class="line">nvmw install v0.6.0          Install a specific version number</div><div class="line">nvmw use v0.6.0              Use the specific version</div></pre></td></tr></table></figure>
-<h2 id="通过nvmw安装任意版本的node"><a href="#通过nvmw安装任意版本的node" class="headerlink" title="通过nvmw安装任意版本的node"></a>通过nvmw安装任意版本的node</h2><blockquote>
-<p>nvmw默认是从 <a href="http://nodejs.org/dist/" target="_blank" rel="external">http://nodejs.org/dist/</a> 下载的、国外服务器、必然很慢<br>好在nvmw以及支持从镜像服务器下载包、于是我们可以方便的从七牛或者淘宝的node-dist镜像下载：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">set &quot;NVMW_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node&quot;</div><div class="line">nvmw install 5.9.1</div></pre></td></tr></table></figure>
-<blockquote>
-<p>于是你就会看到一段非常快速进度条</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">######################################################################## 100.0%</div><div class="line">Now using node v4.3.2</div></pre></td></tr></table></figure>
+<h2 id="首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做："><a href="#首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：" class="headerlink" title="首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做："></a>首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y update</div></pre></td></tr></table></figure>
+<h2 id="安装nodebb基础软件包依赖："><a href="#安装nodebb基础软件包依赖：" class="headerlink" title="安装nodebb基础软件包依赖："></a>安装nodebb基础软件包依赖：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install ImageMagick npm</div></pre></td></tr></table></figure>
+<h2 id="使用nvm来安装node版本。"><a href="#使用nvm来安装node版本。" class="headerlink" title="使用nvm来安装node版本。"></a>使用nvm来安装node版本。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">curl https://raw.githubusercontent.com/creationix/nvm/v0.13.1/install.sh | bash</div><div class="line">source ~/.bash_profile</div><div class="line">nvm list-remote</div><div class="line">nvm install v0.12.7 # as of this writing check the result of the list-remote to see all choices</div></pre></td></tr></table></figure>
+<h2 id="down最新的nodebb源代码到本地"><a href="#down最新的nodebb源代码到本地" class="headerlink" title="down最新的nodebb源代码到本地"></a>down最新的nodebb源代码到本地</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir /home/node</div><div class="line">git clone -b v1.0.0 https://github.com/NodeBB/NodeBB nodebb</div></pre></td></tr></table></figure>
+<h2 id="安装nodebb的依赖库"><a href="#安装nodebb的依赖库" class="headerlink" title="安装nodebb的依赖库"></a>安装nodebb的依赖库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd nodebb</div><div class="line">npm install</div></pre></td></tr></table></figure>
+<h2 id="启动nodebb安装脚本："><a href="#启动nodebb安装脚本：" class="headerlink" title="启动nodebb安装脚本："></a>启动nodebb安装脚本：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./nodebb setup</div></pre></td></tr></table></figure>
+<h2 id="运行nodebb论坛："><a href="#运行nodebb论坛：" class="headerlink" title="运行nodebb论坛："></a>运行nodebb论坛：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./nodebb start</div></pre></td></tr></table></figure>
+<h2 id="配置nginx作为代理："><a href="#配置nginx作为代理：" class="headerlink" title="配置nginx作为代理："></a>配置nginx作为代理：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">server &#123;</div><div class="line">    listen 80;</div><div class="line"></div><div class="line">    server_name forum.example.org;</div><div class="line"></div><div class="line">    location / &#123;</div><div class="line">        proxy_set_header X-Real-IP $remote_addr;</div><div class="line">        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</div><div class="line">        proxy_set_header X-Forwarded-Proto $scheme;</div><div class="line">        proxy_set_header Host $http_host;</div><div class="line">        proxy_set_header X-NginX-Proxy true;</div><div class="line"></div><div class="line">        proxy_pass http://127.0.0.1:4567;</div><div class="line">        proxy_redirect off;</div><div class="line"></div><div class="line">        # Socket.IO Support</div><div class="line">        proxy_http_version 1.1;</div><div class="line">        proxy_set_header Upgrade $http_upgrade;</div><div class="line">        proxy_set_header Connection &quot;upgrade&quot;;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
       
       
     </div>
@@ -314,13 +277,13 @@ git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/05/12/2016-05-12-nodejs-install-and-config/">快速搭建node.js开发环境</a></p>
+        <p><span>本文标题:</span><a href="/2017/05/24/nodebb-install-and-config/">nodebb安装配置使用</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 Lambq 的个人博客">Lambq</a></p>
-        <p><span>发布时间:</span>2016年05月12日 - 14时05分</p>
-        <p><span>最后更新:</span>2016年05月12日 - 15时03分</p>
+        <p><span>发布时间:</span>2017年05月24日 - 00时40分</p>
+        <p><span>最后更新:</span>2017年05月24日 - 01时02分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/05/12/2016-05-12-nodejs-install-and-config/" title="快速搭建node.js开发环境">http://lambq.com/2016/05/12/2016-05-12-nodejs-install-and-config/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://lambq.com/2016/05/12/2016-05-12-nodejs-install-and-config/　　作者: Lambq" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/05/24/nodebb-install-and-config/" title="nodebb安装配置使用">http://lambq.com/2017/05/24/nodebb-install-and-config/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://lambq.com/2017/05/24/nodebb-install-and-config/　　作者: Lambq" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -333,18 +296,9 @@ git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~
 
 <nav id="article-nav">
   
-    <a href="/2016/05/12/2016-05-12-cnpm-install-and-config/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          cnpm安装配置给npm加速
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/05/11/2016-05-11-supervisor-install-and-config/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">supervisor安装配置使用</div>
+    <a href="/2017/04/18/2017-04-18-work-log/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">安福照耀我的人生之路</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -355,7 +309,7 @@ git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#osx、linux环境搭建"><span class="toc-number">1.</span> <span class="toc-text">osx、linux环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#git-clone-nvm"><span class="toc-number">1.1.</span> <span class="toc-text">git clone nvm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通过nvm安装任意版本的node"><span class="toc-number">1.2.</span> <span class="toc-text">通过nvm安装任意版本的node</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#windows环境搭建"><span class="toc-number">2.</span> <span class="toc-text">windows环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#git-clone-nvmw"><span class="toc-number">2.1.</span> <span class="toc-text">git clone nvmw</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通过nvmw安装任意版本的node"><span class="toc-number">2.2.</span> <span class="toc-text">通过nvmw安装任意版本的node</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#centos下面进行安装配置使用"><span class="toc-number">1.</span> <span class="toc-text">centos下面进行安装配置使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做："><span class="toc-number">1.1.</span> <span class="toc-text">首先我们应该更新CentOS到最新的版本，我们可以使用这个命令这样做：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装nodebb基础软件包依赖："><span class="toc-number">1.2.</span> <span class="toc-text">安装nodebb基础软件包依赖：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用nvm来安装node版本。"><span class="toc-number">1.3.</span> <span class="toc-text">使用nvm来安装node版本。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#down最新的nodebb源代码到本地"><span class="toc-number">1.4.</span> <span class="toc-text">down最新的nodebb源代码到本地</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装nodebb的依赖库"><span class="toc-number">1.5.</span> <span class="toc-text">安装nodebb的依赖库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动nodebb安装脚本："><span class="toc-number">1.6.</span> <span class="toc-text">启动nodebb安装脚本：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行nodebb论坛："><span class="toc-number">1.7.</span> <span class="toc-text">运行nodebb论坛：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置nginx作为代理："><span class="toc-number">1.8.</span> <span class="toc-text">配置nginx作为代理：</span></a></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -406,13 +360,11 @@ git clone nvm直接从 github clone nvm到本地、这里建议大家都使用 ~
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/12/2016-05-12-cnpm-install-and-config/" title="上一篇: cnpm安装配置给npm加速">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/05/11/2016-05-11-supervisor-install-and-config/" title="下一篇: supervisor安装配置使用">
+            <a href="/2017/04/18/2017-04-18-work-log/" title="下一篇: 安福照耀我的人生之路">
                 <i class="fa fa-angle-right"></i>
             </a>
         
